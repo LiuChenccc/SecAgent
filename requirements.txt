@@ -1,0 +1,6 @@
+pyyaml
+scikit-learn
+openai
+fastapi
+uvicorn
+requests
