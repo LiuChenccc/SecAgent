@@ -6,7 +6,7 @@
 
 from .agent import SecurityAgent
 from .intent import IntentRecognizer
-from .skills_retriever import SkillsRetriever, SkillInfo, normalize_subdomain
+from .skills_retriever import SkillsRetriever, SkillInfo
 from .skill_mapper import (
     get_skill_domain,
     get_skill_domains,
@@ -20,6 +20,7 @@ from .chinese_trigger_map import (
     CHINESE_TRIGGER_MAP,
     get_candidate_subdomains,
 )
+from intent_recognition import normalize_subdomain
 
 __all__ = [
     "SecurityAgent",

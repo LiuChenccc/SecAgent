@@ -1,9 +1,19 @@
 # Skills库（用户需自行下载）
 agent/skills/
 
-# LoRA模型权重
+# LoRA训练产物（不需要提交）
 ytsb_intent_lora/
 *.zip
+lora_code_extracted/__MACOSX/
+lora_code_extracted/security_intent/output/**/checkpoint-*/optimizer.pt
+lora_code_extracted/security_intent/output/**/checkpoint-*/adapter_model.safetensors
+lora_code_extracted/security_intent/output/**/checkpoint-*/scaler.pt
+lora_code_extracted/security_intent/output/**/checkpoint-*/trainer_state.json
+lora_code_extracted/security_intent/output/**/checkpoint-*/training_args.bin
+lora_code_extracted/security_intent/output/**/checkpoint-*/rng_state.pth
+lora_code_extracted/security_intent/output/**/checkpoint-*/scheduler.pt
+lora_code_extracted/security_intent/output/**/images/
+lora_code_extracted/security_intent/output/**/runs/
 
 # 运行时数据
 agent/memory_store/execution_memory.jsonl

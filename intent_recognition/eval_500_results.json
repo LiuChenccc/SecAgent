@@ -1,0 +1,8 @@
+{
+  "total": 500,
+  "main_intent_accuracy": 93.4,
+  "sub_intent_accuracy": 86.4,
+  "multi_intent_recall": 85.7,
+  "errors": 0,
+  "error_details": []
+}

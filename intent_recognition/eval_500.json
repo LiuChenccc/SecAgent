@@ -1,0 +1,5922 @@
+[
+  {
+    "query": "用户想了解金融行业中敏感数据扫描的合规事宜",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户在2026年3月8日20:08:27有内部自研系统的高危漏洞紧急热补丁推送权限申请，需明确该权限申请的具体流程且领导今天要有结果",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要从包含“192.168.1.100 发起外连，Hash为1a2b3c4d5e6f”的日志中提取IP和Hash并查询信誉",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为协助进行CIS Benchmark或等保标准的合规基线配置项核查并提供合规报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要针对IP地址101.48.157.163和72.175.222.191进行外部威胁情报库关联查询",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需对SIEM或IDS检测规则调优来解决文件被杀毒软件隔离可能的误报问题",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "企业安全运营人员需要企业网络安全防护方案、近2年相似攻防实战案例，以及处理当前192.168.222.119对SSH的暴力破解尝试预警相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解安全合规审计报告生成相关的具体内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "调优针对大量外连请求的SIEM/IDS规则来降低误报率",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户需要最新安全防护方案以及检索安全设备操作手册或API文档",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要开通系统运维与配置管理模块下证书到期监控权限，以实现SSL证书有效期查询与预警功能",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "分析安全设备例行维护时CPU/内存飙升的性能瓶颈原因",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统进行资产指纹识别，关键是识别其OS版本、开放端口及服务组件",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是执行针对Ark API调用超时问题的隔离阻断指令",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "协助对被杀毒软件隔离的文件进行威胁检测识别、关联情报库查询及核查配置项是否符合CIS Benchmark或等保标准",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要关联威胁情报查询名为test.exe的被隔离文件是否为误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解安全设备例行维护需要检查哪些方面",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询年度审计中敏感数据未加密的情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理主题为“紧急财务报表”的钓鱼邮件的隔离阻断情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问钓鱼邮件应急处置的标准操作流程相关内容",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "协助新上线业务系统安全评估，查询系统漏洞状态，执行特定恶意进程或异常服务的强杀请求",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户需要从行业研报分析总结中提取长篇威胁态势报告的摘要",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户想要了解网络安全中漏洞扫描这一具体方面的安全术语",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "安排安全设备例行维护且推送高危漏洞紧急热补丁",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为针对可执行文件类型的样本文件，想要进行静态特征提取或动态行为分析来判断其是否有恶意",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "协助开展安全设备例行维护，包含高危漏洞紧急热补丁分发与身份权限审计工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是了解如何将告警自动确认为误报或低风险并标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户要求立即协助终止与钓鱼邮件相关的恶意进程，需确定恶意进程标识、受影响系统环境并完成进程强杀及反馈处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户需对安全设备高危告警中误报或低风险部分标记处理并反馈情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是下发隔离阻断指令封禁与Ark API调用超时相关的IP",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "本周内完成企业内部网络及相关联网设备的全面漏洞排查，并结合CVSS评分与资产重要性评估漏洞风险等级",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解在数据库或文件系统场景下如何进行敏感数据扫描来做合规报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要立即终止服务器上正在运行的可疑进程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "提取被隔离文件中的IP、Hash并查询信誉来判断是否误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "服务器检测到可疑进程，需联动创建IT运维工单协同处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "查询昨晚异常流量的IP溯源",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "对异常流量样本文件进行静态/动态分析，识别目标系统OS版本、开放端口及服务组件，开展恶意代码分析与资产指纹识别",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户希望分析沙箱分析触发告警里可疑文件投递的时间、涉及系统范围及后续处理",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户要求协助终止钓鱼邮件相关恶意进程，需明确恶意进程标识、受影响设备范围并尽快强杀处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "协助核查系统配置项是否符合CIS Benchmark或等保标准以准备年度审计相关材料",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户希望协助具体执行安全设备例行维护以及CMDB里资产属性修正的操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "用户需要提供发件人IP、恶意链接相关IP或受影响主机标识信息来明确钓鱼邮件隔离阻断情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "协助开展等保2.0整改工作中全公司相关系统配置项符合CIS Benchmark或等保标准的合规基线检查并输出报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "协助开展年度审计中对企业所有系统过去一年日志完整性的检查，查看是否存在缺失、断档或被篡改情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助完成证书到期更换及系统运维配置中用户权限调整，包括修改VPN或系统访问权限配置",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "查询本次全面漏洞排查中CVE - XXX的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "查询本企业所有信息系统近30天内漏洞从发现、工单流转到修复复测的全流程状态，涵盖目标资产范围及最近30天内的漏洞生命周期跟踪情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户需要解释某安全术语的含义",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "协助检查全系统日志完整性，确认有无缺失、断档或被篡改迹象",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "协助开展等保2.0整改中安全合规与审计的日志完整性审计，检查企业各系统日志是否存在缺失、断档或被篡改并反馈审计情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对内部服务器集群启动CVE漏洞扫描相关事宜",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "对公司内部所有系统开展资产指纹识别，排查OS版本、开放端口及服务组件情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户需要在授权环境下进行PoC验证并查询相关手册",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解GDPR的定义及相关条款",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要关联威胁情报库查询被隔离文件是否为误报并丰富相关上下文",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要针对策略违规扫描方面处理Ark API调用超时的问题",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户想要了解云架构下网络安全防护方面的特定架构安全实践",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为查询最近新公布CVE漏洞的官方修复补丁或缓解措施，需明确特定CVE的具体修复建议",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需针对新公布CVE漏洞，依CVSS评分和资产重要性检查系统、分析漏洞风险等级以完成危害评估",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问如何调度华为USG系列防火墙的补丁管理系统来进行系统补丁的批量例行维护更新",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解如何分析账户权限是否存在过度授权的问题",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要重启异常的安全代理服务",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问昨晚异常流量下失陷主机的相关情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询数据库或文件系统中未加密的敏感信息",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是先对相关样本文件进行静态特征提取来处理存在大量外连请求的告警情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展资产指纹识别工作，明确其操作系统版本、开放端口及服务组件情况并尽快完成评估",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户需要获取GDPR和《中华人民共和国数据安全法》中涉及数据安全的具体条款内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "协助开展等保2.0整改中身份权限审计，分析企业内部账户过度授权及幽灵账户情况，输出审计结果与整改建议",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户的意图是安全代理服务在重启时出现卡死或异常的情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是查隔离文件误报并进行IOC检索与PoC验证",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户需要针对IP地址为192.168.22.43的目标系统进行资产指纹识别，包括识别操作系统版本、开放端口和服务组件等工作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解安全设备高危告警处理中涉及告警自动确认和检测规则调优的相关内容",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取针对企业现有架构的最新安全防护方案建议",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要执行更换证书和修改防火墙ACL的操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询公司Web系统的SSL证书有效期情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询example.com这个域名的SSL证书有效期情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "年度审计准备阶段需开展身份权限审计，分析各类账户权限、检查过度授权、排查幽灵账户，且有暴力破解尝试被检测到的情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解最新企业安全防护方案详情，同时查询安全设备的操作手册及API文档内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要提供可疑进程的进程名、所在服务器的IP地址等关键信息以执行隔离阻断操作",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "确认需检查系统最近公布的CVE漏洞，结合CVSS评分与资产重要性进行风险等级分析",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "排查被杀毒软件隔离文件是否误报，同时进行流量异常检测，识别PCAP包或流日志中的异常通信模式",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户希望对未知恶意软件样本进行大量外连请求的静态特征提取分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解GDPR中数据主体权利相关条款、数据安全法中数据处理者义务以及网络设备误报告警处理相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户需要确认服务器上可疑进程的告警相关情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户需要进行更换证书以及调整VPN权限配置的操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "用户需依据流量趋势对系统运维与配置管理相关资源进行分析，确定带宽增加量或计算资源扩容调整",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "安排时间对企业内部所有防火墙设备进行访问控制列表的检查、新增或修改的例行维护工作，涉及检测到的暴力破解及可疑域名情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对公司内部Web服务器进行漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解网络访问流量场景下基于流量趋势来做资源扩容建议的相关内容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解攻击溯源的流程",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "用户需分析外连请求告警，针对SIEM或IDS规则调优以减误报，明确规则修改方法步骤",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户需要明确身份权限审计中分析过度授权和排查幽灵账户的具体审计方法及对应数据支撑情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是针对文件Hash为d183d1336a90e39c5d8fe231d5fa68aa52193a3f35c63683818e83c3ecb20e3a的可疑进程开展事件根因调查，需获取进程相关多方面信息追溯攻击链源头",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解年度审计中信息系统审计报告的具体内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户需开展年度审计中身份权限板块工作，分析账户过度授权、排查幽灵账户，且关注到192.168.128.143对SSH的暴力破解尝试情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "本周内完成对公司内部所有信息系统的资产指纹识别，包括识别目标系统的操作系统版本、开放端口及服务组件",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "协助开展企业特定资产全面漏洞排查，明确资产范围并在[具体时间]前完成关键安全补丁版本检查工作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "分析安全设备CPU/内存飙升性能瓶颈原因并处理证书快到期更换事宜",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解VPN或系统访问权限配置修改在新权限申请中的具体步骤",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "协助核查全公司信息系统配置项是否符合CIS Benchmark或等保标准，准备合规基线检查材料",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为立即查看高危告警并启动勒索攻击场景下的系统备份恢复流程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理CMDB中服务器的SSL证书属性更新问题，已明确资产为服务器，证书为SSL证书",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是协助处理钓鱼邮件事件并启动勒索攻击场景下的系统备份恢复流程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为明确开通系统运维与配置管理中系统补丁分发权限的详细流程、审核方面、时间节点安排及开通后保障批量更新操作稳定性与安全性等相关推进步骤与要求，关键是围绕系统补丁分发权限开通的相关工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "启动新上线业务系统针对具体IP段的漏洞扫描任务",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户希望针对网络安全威胁态势报告，提取主要威胁类型、趋势分析以及重点领域情况来制作摘要",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "检查近一周内系统日志的完整性，审计是否存在缺失、断档或被篡改情况以用于合规报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "开展安全设备例行维护中系统运维与配置管理的用户权限调整任务，涉及修改VPN或系统访问权限配置，需安排人员按计划处理并明确时间安排",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "协助核查系统配置项是否符合CIS Benchmark或等保标准",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "检索近一年企业网络中典型的跨站脚本攻击历史相似攻防案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要定位192.168.1.0/24网段中存在失陷主机的情况，且已知该网段流量有异常HTTP请求特征",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "协助开展安全设备例行维护，需修改VPN或系统访问权限配置，安排操作并告知进展，确保合理时间内完成权限配置修改维护任务",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解针对可疑文件外连检测场景下的沙箱分析相关内容",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是在一周内开展全面漏洞排查，重点进行补丁版本检查，范围涉及公司各类IT资产，需梳理资产清单、核对补丁并形成报告，同时提及了连接失败的相关情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理防火墙证书到期更换并进行访问控制列表的新增或修改",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解证书到期监控相关的具体内容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "基于安全设备运行状况及流量变化，评估是否需增加带宽或计算资源并提供扩容建议方案",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "协助进行年度审计前合规基线检查，核查配置项是否符合CIS Benchmark或等保标准",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是分析被隔离文件是否误报以及基于IOC或行为特征定位内网失陷主机的情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "自动确认服务器上可疑进程的告警并标记为已处理，完成该服务器可疑进程告警的处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户希望针对恶意软件样本进行静态特征提取的分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于已提供的进程名称、进程ID、文件路径来查询该可疑进程的攻击链源头情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解CIS Benchmark或等保标准的合规基线检查相关内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "针对高危告警里勒索攻击场景启动系统备份恢复数据的流程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助调查钓鱼邮件事件，明确其攻击链源头、发送时间、目标用户范围及最初发送源地址等进行根因调查",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解申请开通系统运维证书到期监控权限的具体流程及所需准备的材料情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户想明确云原生架构中容器化部署、服务网格通信、配置管理等环节涵盖访问控制、漏洞扫描、日志审计的最佳安全防护方案建议",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户要求立即进行策略违规扫描来识别年度审计相关的安全合规策略违规情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "查询新上线业务系统中特定CVE的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解零日漏洞这个安全术语的具体含义",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户需要获取网络安全行业中企业级网络安全细分领域的威胁态势报告摘要",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户需处理恶意代码分析告警，排查外连设备范围、时间区间，进行样本静态动态分析，确定风险点并给建议",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "理解需对流量异常告警中外连请求的时间、涉及设备、源目标IP等进行分析，给出排查处理建议",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解Linux系统下的合规基线检查和进程强杀相关内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户希望聚焦企业服务器相关业务场景中Ark API调用超时问题的事件根因调查攻击链源头相关操作",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "分析近期大量外连请求的奇怪告警，针对SIEM或IDS威胁检测识别规则调优以减少误报，需明确具体规则及外连请求相关细节开展优化",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是请求提供可疑进程处置的SOP",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "检索近三年企业网络环境中Web应用漏洞利用、勒索软件攻击等类型的历史相似实战攻防案例，供安全培训的知识问答与教育环节参考",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为开通系统运维与配置管理中系统补丁分发权限，目标是调度补丁管理系统进行批量更新操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要了解SSL证书有效期预警以及敏感数据发现的相关情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "查询本系统中最近公布的CVE漏洞，跟踪其从发现到工单流转、修复复测的状态",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统启动漏洞扫描并明确目标范围，同时分析安全设备CPU/内存飙升的性能瓶颈原因",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户想查看沙箱分析报告以判断是否存在误报情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解服务器系统日志完整性审计中日志缺失、断档或被篡改的具体检查情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "查询全公司各业务系统中CVE-XXXX漏洞的官方修复补丁、缓解措施及具体修复建议",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要跟踪内部办公系统A新上线业务系统漏洞的生命周期状态",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询www.example.com这个域名的SSL证书有效期情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取SQL注入、XSS、DoS、网络钓鱼、零日漏洞的详细专业解释",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于已提供的发件人邮箱和邮件主题来分析钓鱼邮件的攻击链源头",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理钓鱼邮件、进行备份恢复操作并查询证书有效期",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户希望生成公司内部核心业务系统在安全防护机制方面的等保2.0整改审计报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "协助开展全面漏洞排查，跟踪企业近一个月内信息系统漏洞从发现起始、工单流转到修复复测的完整生命周期状态情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理文件被杀毒软件隔离是否误报的问题",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户需将收到钓鱼邮件的安全事件转化为IT运维工单，明确钓鱼邮件具体内容、发送时间、涉及用户等信息以协同处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户需要进行防火墙的访问控制列表（ACL）修改和证书更换操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需处理钓鱼邮件安全事件转化工单、开展身份权限审计，同时关注192.168.219.64到25.127.75.229:445的连接失败ERROR日志相关情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "检索近一年企业网络环境中类似的实战攻防历史案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对IP地址175.51.152.44和160.188.226.180相关的外连请求进行流量异常检测",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展安全评估，跟踪漏洞从发现到修复复测的生命周期并生成合规审计报告",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户需针对被隔离文件的攻击IP开展溯源，关联其地理位置、组织归属及历史活动记录以判断IP威胁及文件隔离是否误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "查询新上线业务系统中特定CVE的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "检测到服务器可疑进程，需执行勒索攻击场景下的系统备份恢复流程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解云架构中网络安全防护方面的最新最佳安全实践",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解网络安全领域中漏洞（Vulnerability）这一具体术语的解释",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需要检索企业安全设备的操作手册及API文档相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查找企业数据处理相关业务场景中GDPR和数据安全法的相关条款",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "查询最近公布的CVE漏洞，跟踪其从发现到修复复测的状态",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户需要生成针对互联网服务中Web应用服务类型的等保2.0整改审计报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "协助开展安全设备例行维护及高危漏洞紧急热补丁推送，需明确涉及的安全设备范围与完成时间",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要安排处理现有证书到期更换及VPN或系统访问权限配置调整事宜",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "针对企业安全合规与审计的策略违规扫描任务，基于检测到的192.168.160.48对SSH的暴力破解尝试日志开展相关违规扫描及情况整理",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助编写等保2.0整改审计报告的具体内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户需要分析防火墙CPU和内存飙升的原因",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "判断被杀毒软件隔离文件是否误报并检测对应PCAP包流量异常",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户需关联外部威胁情报查询被杀毒软件隔离文件是否有实际威胁",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对SIEM或IDS的威胁检测与识别规则进行调优以减少误报，要明确目标、范围并关注时间相关情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户需要解释黑客术语的具体含义",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解最近7天外连请求相关的失陷主机情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "协助开展安全设备例行维护，调整VPN或系统访问权限配置并尽快完成",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "协助处理证书到期更换、VPN或系统访问权限修改、本地警报映射到外部威胁情报的关联查询工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解针对用户收到钓鱼邮件场景的初步处置流程的SOP",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为检查系统日志是否存在缺失、断档或被篡改的迹象，明确了针对系统日志进行完整性方面缺失、断档及被篡改情况的检查这一完整意图",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需通过企业安全运营中心的防火墙或EDR系统封禁可疑进程关联IP或隔离主机，需明确可疑进程具体标识及服务器具体位置信息",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理员工安全知识手册的准备、防火墙等设备的操作手册查询以及内部服务器系统的批量补丁更新事宜",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "基于流量趋势评估，申请系统运维与配置管理的资源扩容（带宽或计算资源）相关权限开通",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户遇到外连告警，考虑将可疑文件投沙箱分析以了解具体情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是尽快对公司所有信息系统开展资产指纹识别，重点识别操作系统版本、开放端口、运行服务组件等并输出结果，涉及连接失败及恶意URL情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展安全评估，指定其为目标范围，启动漏洞扫描并在授权环境执行PoC验证漏洞",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是对新上线业务系统开展安全评估中的资产指纹识别，需识别操作系统版本、开放端口及相关服务组件",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户需要生成针对企业安全合规与审计策略违规扫描任务中识别违反安全策略操作情况的合规报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询系统手册中某安全术语在操作手册或API文档中的具体含义",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户希望获取用于安全培训的网络攻击中DDOS相关复杂黑客术语或缩写的解释材料",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需要最新企业安全防护方案及近一年相似实战攻防历史攻击案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "协助开展等保2.0整改工作，需扫描数据库或文件系统未加密敏感信息进行敏感数据发现并调优SIEM/IDS规则减少误报",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展基于CVSS评分与资产重要性的漏洞危害评估",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "确认服务器上可疑进程的低风险告警并标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "从相关非结构化文本中提取IP、Hash等并查询其信誉，进行IOC提取与检索",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户希望通过动态沙箱针对因系统出现奇怪告警且日志有大量外连请求的情况对可疑文件进行行为分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要扫描企业策略违规情况，无其他关键参数",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户需依据系统运维与配置管理权限的流量数据，探讨短期、中期、长期的资源扩容规划及实施步骤",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要分析服务器可疑进程攻击链的源头",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解攻击类型的处置步骤",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户希望明确安全设备例行维护中高危漏洞紧急热补丁的推送安排",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理可执行文件被杀毒隔离的情况，以及针对失陷主机发现基于IOC、漏洞危害评估结合CVSS和资产重要性的安全任务进行处理",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户需明确高危告警中恶意进程相关特征、受影响服务器IP（192.168.243.194）及系统环境等，涉及失败登录用户user44和文件Hash 03d64ef642ed24173800e8a6ab723103a5d4aecc36f079302840f70de7e4d9c9以开展进程强杀处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户希望明确选择GDPR数据主体权利、数据安全法个人信息范围或特定黑客术语中的一个具体方向来获取相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "针对新上线业务系统进行安全评估，在授权环境执行概念验证代码以确认系统是否存在漏洞并明确PoC验证的具体过程及结果情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "针对昨天晚上发现的异常流量的PCAP包或流日志进行流量异常检测，识别异常通信模式并分析处理",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理服务器可疑进程的隔离阻断事宜，且已提供可疑进程的进程标识及关联IP等信息",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "用户需要针对CVE-2023-12345漏洞进行PoC验证",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户需要修正系统运维与配置管理中CMDB资产属性，更新证书到期对应的资产属性来处理证书到期更换事宜，确保资产信息准确",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "协助处理系统运维中证书到期更换及高危漏洞紧急热补丁的分发工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要了解沙盒逃逸定义技术细节、检索Web应用漏洞攻击实战案例、对PCAP包流量异常检测，且提及恶意软件检测及相关IP",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "梳理企业级微服务架构未来1个月安全培训的最佳安全实践方案，涵盖架构各组件安全防护策略、常见安全风险识别方法及应对措施",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "查询SSL证书有效期并预警，同时获取当前攻击类型的应急处置标准作业程序指导",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要重启防火墙设备上的安全代理",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "将安全设备刚发出的高危告警里误报或低风险的标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询设备维护情况、证书有效期以及GDPR条款内容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解身份权限审计的具体实施步骤",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户需要关联大量外连请求告警中攻击IP的地理位置、所属组织及历史活动情况并获取分析结果",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "对IP为192.168.1.100的服务器上的“suspicious_process.exe”可疑进程进行强杀处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "需调优SIEM/IDS检测规则减少误报，关联含可疑出站连接（10MB，恶意URL http://evil93.com/payload）的本地警报与外部威胁情报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要启动内部业务系统A的漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户需完成CMDB中相关资产证书到期属性的更新，将其替换为新证书的有效信息",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "用户需要SOC智能安全助手协助检查企业相关资产针对近期CVE漏洞的特定资产补丁版本安装情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要解释安全术语、检索相似攻防案例并基于IOC或行为特征定位内网失陷主机",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需对昨晚异常流量的攻击IP进行溯源，关联地理位置、组织归属与历史活动并详细分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "精准检索欧盟GDPR个人数据处理合法性基础、数据主体权利条款及中国数据安全法数据分类分级、风险评估机制、法律责任相关条款原文用于安全培训材料",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "生成针对公司所有数据库和文件存储区域最近一个季度内未加密敏感信息的敏感数据发现合规报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查看针对公司内部核心业务系统的最新安全防护方案以及该系统漏洞生命周期的状态",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展安全评估，包括资产指纹识别（确定OS版本、开放端口及服务组件）和情报库关联查询以丰富本地警报上下文信息",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需针对具体安全设备型号例行维护中CPU和内存飙升，分析近一周运行日志、实时流量等因素，包含2026-03-08 15:21:27的失败登录尝试线索的相关分析",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要针对服务器系统进行杀可疑进程的相关操作",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户需要进行证书到期更换以及分析设备性能瓶颈相关操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "协助开展对企业特定资产的关键安全补丁版本的全面排查工作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "立即重启系统运维与配置管理中卡死或异常的安全代理服务",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户需要获取新上线业务系统的IP地址或域名以进行资产指纹识别",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "处理被杀毒软件隔离文件确认误报，提取相关文本中IP、Hash等IOC并查询信誉，启动针对192.168.0.0/16网段的漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解数据库中未加密敏感信息的扫描情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "对2026-03-09 02:57:27用户user80、源IP192.168.192.183的高危告警中误报或低风险的标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "一周内全面查询企业内所有使用SSL证书的资产有效期，对剩余30天内即将到期的证书预警并生成详细报告",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解通过文件哈希值核查来判断被杀毒软件隔离文件是否为误报的具体方法",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "立即对公司所有信息系统资产开展补丁版本检查，重点针对新公布CVE漏洞关键补丁，48小时内完成核查并形成报告，且提及检测到192.168.185.155对SSH的暴力破解尝试",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要生成内部办公系统的等保2.0整改审计报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户需要将服务器上可疑进程对应的低风险或误报告警标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户需要生成等保2.0整改审计报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解有告警显示大量外连时是否需要对可疑文件进行沙箱分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对数据库进行敏感数据扫描及相关应急处置工作的协助",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "查询新上线业务系统漏洞从发现、工单流转到修复复测的状态情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "查询本企业所有信息系统自上月1日起发现的漏洞，跟踪其从发现、工单流转到修复复测的完整状态进行漏洞生命周期排查",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是请求协助在企业服务器上强杀可疑进程，需用户提供进程名或PID等关键信息来精准终止恶意进程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于已有的流量历史数据和实时流量监测数据来获取流量扩容建议",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要了解服务器端相关的新出CVE漏洞情况、进行风险评估并查找攻防案例",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "协助对安全设备高危告警误报/低风险确认标记为已处理，及对长篇威胁态势报告进行行业研报摘要提取，完成安全事件响应与知识分析任务",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "协助检测被隔离文件误报、调优SIEM/IDS规则减误报、重启异常安全代理服务",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "查询物理服务器资产的关键补丁版本情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "企业SOC安全运营人员想了解其具体架构（如混合云架构等）的最新安全防护方案及该架构下最佳安全实践的详细专业方案信息",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解端口扫描中主动扫描过程的相关内容，用于领导安排的全面漏洞排查里的资产指纹识别工作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "评估新上线业务系统的漏洞危害",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户需要分析收到钓鱼邮件的攻击链源头，明确相关时间与涉及目标",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "生成监管机构合规报告中关于扫描最近一个月内数据库和文件系统未加密敏感信息情况的敏感数据发现部分内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解高危漏洞紧急热补丁推送权限申请的具体流程",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于suspicious_4515.exe的哈希值来排查内网中可能已受控终端的失陷主机情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于已提供的发件人邮箱地址、邮件关键内容等信息来查询钓鱼邮件攻击链源头情况",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想知晓昨晚异常流量下失陷主机的相关情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是协助开展安全设备例行维护中SSL证书到期监控，全面查询相关系统、梳理有效期、关注剩余不足一月证书，要求三日内完成查询并形成预警报告",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对内部业务相关的数据库及文件系统中未加密的敏感信息进行扫描",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需开通系统运维与配置管理中系统补丁分发权限，以调度补丁管理系统批量更新，需明确权限开通流程及安排",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解2026年3月9日12:07:27检测到暴力破解尝试及存在可疑域名时，安全设备例行维护中紧急热补丁的推送情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "检测被隔离文件是否为误报且分析相关流量是否存在异常通信模式",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "协助进行年度审计的日志完整性核查，检查各系统日志的缺失、断档和篡改迹象",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户因证书到期需将防火墙策略改为ACL策略",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解新上线Web应用类型业务系统如何做PoC验证查漏洞",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解安全设备例行维护的具体操作步骤",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "对被杀毒软件隔离的文件进行沙箱分析来判断是否为误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要明确钓鱼邮件引发勒索攻击场景下的系统备份恢复流程相关内容",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为分析高危告警攻击链的源头",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是协助快速终止与钓鱼邮件相关的恶意进程或异常服务，需明确具体恶意进程或服务标识开展强杀处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户需要检索历史中相似的攻防案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "协助开展企业安全设备例行维护中系统运维与配置管理的系统补丁分发任务，调度补丁管理系统对企业相关系统进行批量更新",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解合规基线检查中配置项是否符合等保标准的情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "立即对企业所有信息系统资产进行检查，核实是否安装最近新公布CVE漏洞的关键安全补丁并尽快完成补丁版本检查",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解网络钓鱼类的攻防案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "执行系统运维与配置管理，对安全设备例行维护，重启卡死或异常的安全代理服务",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理防火墙策略中新增或修改访问控制列表的相关工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "检索企业安全设备的操作手册与API文档相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为申请CMDB资产属性修正权限",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "启动针对公司内部生产服务器网段新公布CVE漏洞的扫描任务，需24小时内完成并输出详细报告",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户希望先从常见的漏洞相关术语开始获取解释帮助",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需确认对安全设备高危告警中误报或低风险告警标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问沙箱分析中外连请求情况的相关内容",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解可疑文件外连场景下的沙箱分析相关内容",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要将用户收到钓鱼邮件的事转成运维工单，且已提供发件人邮箱这一关键信息",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户的意图是系统运维与配置管理相关的权限申请及扩容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "将刚触发的高危告警中误报或低风险的标记为已处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      }
+    ]
+  },
+  {
+    "query": "提取近期大量外连请求告警日志中的IP、Hash等IOC，查询过去24小时内这些IOC的信誉情况以进行威胁检测识别",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于运行日志、设备连接数、策略配置情况来分析安全设备CPU和内存突然飙升的原因",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "重启系统运维与配置管理中卡死或异常的安全代理服务以处理证书快到期需更换事宜",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展安全评估，重点进行漏洞危害评估，依据CVSS评分结合资产重要性分析漏洞风险等级，评估范围为新上线业务系统全部组件及功能",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户需要分析源IP为192.168.237.37的攻击IP的地理位置、组织归属和之前的历史活动",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "检查新公布的CVE漏洞，基于CVSS评分和资产重要性评估风险等级",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "协助开展全公司相关信息系统等保2.0整改合规基线检查，核查配置项是否符合CIS Benchmark或等保标准并推进任务",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需明确系统证书更换流程、负责人员、预计时间，以及系统补丁分发的调度时间、参与系统范围、批量更新对象、监测保障措施，还有恶意软件检测相关情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为查询安全设备的操作手册",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解威胁检测与识别中待分析样本的恶意代码分析是否需要进行静态动态分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取服务器可疑进程涉及攻击类型的应急处置标准流程与操作步骤",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "理解用户需开展公司数据库及文件存储系统过去一月未加密敏感信息扫描，生成含扫描结果、分布位置数量统计及整改建议的合规报告，同时涉及连接失败和可疑域名相关情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解GDPR中数据跨境传输的相关条款以及数据安全法中个人信息处理规则的相关条款",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对出现大量外连请求的恶意代码样本进行静态特征提取或动态行为分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要创建针对可疑进程的联动工单",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "发现服务器存在可疑进程，需联动创建IT运维工单协同处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "启动公司所有信息系统（含内部服务器集群、办公网络终端）的全面漏洞排查任务，需3个工作日内完成并输出详细报告",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "立即开展年度审计相关的策略违规扫描以识别违反企业安全策略的操作",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户申请开通系统运维与配置管理里防火墙策略新增或修改访问控制列表的权限",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理SSL证书到期更换、CMDB资产属性修正以及GDPR、数据安全法相关条款检索事宜",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解VPN权限申请里修改访问权限配置的具体申请内容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查找Web应用攻击类的实战攻防历史相似案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "协助开展等保2.0整改阶段合规基线检查，涵盖各类信息系统配置项，一周内完成初步全面排查、梳理不符合项清单并制定整改方案，涉及相关登录失败及IP地址情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "针对昨晚某时间段出现的含IP地址162.145.239.143等的可疑出站连接本地警报，进行外部威胁情报关联查询来丰富上下文",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取针对服务器上发现的可疑进程的攻击类型的标准作业程序指导",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要立即对企业系统进行资产指纹识别，检测OS版本、开放端口及服务组件",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解服务器环境下的可疑进程标准作业程序",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户希望查找网络安全领域中服务器安全方向的历史攻防案例及合规基线检查相关材料",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对近期有大量外连请求的恶意代码样本开展静态特征提取与动态行为分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询隔离文件误报并关联情报IOC",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "启动新上线业务系统的漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户需要强杀服务器上的可疑进程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解服务器系统日志中日志缺失方面的具体情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助准备年度审计材料，进行CIS或等保合规基线检查并调整VPN等系统用户权限",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是从隔离文件中提取IP、Hash等IOC并查询信誉，以及解释相关复杂黑客术语或缩写",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对《2023年全球网络安全威胁态势报告》进行摘要提取",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "开通系统运维与配置管理中证书到期监控权限，实现SSL证书有效期查询及预警",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "协助对存在大量外连请求的样本文件开展静态特征提取或动态行为分析进行恶意代码分析，及分析安全设备CPU/内存飙升性能瓶颈并结合日志排查",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要关联威胁情报库对被隔离文件是否为误报进行关联分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "需对被杀毒软件隔离的文件开展静态特征提取或动态行为分析以判定是否为恶意代码",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解高级持续性威胁（APT）的定义、攻击特点和攻击流程相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解CVSS评分与资产重要性结合的漏洞危害评估具体内容",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户希望将系统中用户反馈收到钓鱼邮件的状况创建为IT运维工单以协同处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解勒索攻击场景下启动数据恢复流程的相关内容",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "为系统运维与配置管理开通SSL证书到期监控功能，需查询SSL证书有效期，设定到期前30天、15天等预警阈值进行预警以保障系统相关部分安全稳定",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解等保2.0整改中的策略违规扫描情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问等保2.0策略违规扫描的具体情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解聚焦通过IOC来定位内网中已受控的失陷主机的相关操作或排查方法",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解GDPR中数据主体权利相关的具体条款",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "协助处理新权限申请，开展SSL证书有效期查询预警与高危漏洞紧急热补丁推送工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要获取最新安全防护方案，检索安全设备操作手册或API文档，并跟踪漏洞从发现到工单流转到修复复测的状态",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解基于安全设备运维中流量峰值维度来给出资源扩容场景的流量趋势建议",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户发现昨天有网络扫描类的异常流量，想了解是否需要调整检测规则",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是针对网络攻击场景查异常流量关联情报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "查询昨晚异常流量的IP溯源",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "提取昨晚异常流量文本中的IP、Hash并查询其信誉",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户在2026年3月9日01:02:27因安全设备触发恶意域名外联攻击的高危告警，急需获取针对该攻击类型的应急响应步骤来处理此紧急安全事件",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为协助分析服务器可疑进程的攻击链源头，需明确进程具体信息、出现时间和涉及服务器范围以开展根因调查",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "事件根因调查"
+      }
+    ]
+  },
+  {
+    "query": "用户想知道360杀毒软件隔离文件怀疑误报时如何调检测规则减少误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "审核用户申请开通系统运维与配置管理里高危漏洞紧急热补丁推送权限的请求",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是基于流量趋势来判断是否需要进行扩容",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要准备下年度安全合规审计报告的生成相关材料，明确了目标是生成下年度安全合规审计报告，时间为下年度，范围是安全合规审计报告相关材料",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户希望了解云计算架构下针对特定架构的最佳安全实践类的最新安全防护方案",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是尽快在服务器上通过防火墙或EDR对可疑进程关联的IP地址或运行进程的主机进行隔离阻断以阻断其网络活动",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是了解针对未明确架构类型且发现恶意文件（suspicious_8246.exe，Hash为99935794134267d433f3c3a16cead415485d97a6a84711d35565bfcbaf84cd73）的最新安全防护方案及架构最佳安全实践",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "查询最近新公布的CVE漏洞的官方修复补丁、缓解措施，明确CVE具体信息及修复建议内容以进行系统针对性检查",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于已提供的发件人邮箱、收件人邮箱、邮件主题来创建关于用户收到钓鱼邮件的IT运维工单",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "协助检查杀毒软件隔离文件误报情况、调优SIEM/IDS检测规则降误报、进行防火墙访问控制列表的新增或修改",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户希望从CVSS评分和资产重要性维度来评估新上线业务系统的漏洞危害",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是先进行SSL证书有效期的查询",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助处理钓鱼邮件报告、确认误报告警并基于流量趋势给出资源扩容建议",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "告警自动确认"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要调整SIEM/IDS规则来减少昨晚产生的误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "需对服务器可疑进程分析判定是否恶意，依勒索攻击场景启动系统备份恢复流程，排查风险与检查系统备份状况并处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户需明确安全术语意思并提取长篇威胁态势报告摘要",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户需要实现自动汇总审计结果并生成合规性报告文档",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解钓鱼邮件应急响应流程的标准作业程序",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "用户需要获取日志中“暴力破解尝试检测”（source: 192.168.152.159, target: SSH）和恶意URL（http://evil8.com/payload, http://evil73.com/payload, http://evil64.com/payload）相关安全术语的准确解释",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为重启系统运维与配置管理中卡死或异常的安全代理服务且更换快到期的证书",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户需处理开通系统运维与配置管理中高危漏洞紧急热补丁推送权限的申请，要确认合规并了解后续权限开通相关操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户申请开通系统运维与配置管理中资产信息更新、修正CMDB资产属性的权限",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "明确企业级云原生架构部署和运行阶段在漏洞扫描、访问控制、日志审计等方面的具体安全实践操作步骤及适用时间范围，用于安全培训知识问答准备",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "查询生产环境中业务系统X的新上线业务系统的补丁版本",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "需明确失陷主机192.168.129.206所在内网网段，确定2026-03-08 18:25:27开始的大量外连请求情况，分析139.8.48.228:3389外连是否正常及追溯失陷主机受控情况和对其他资产影响",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需明确特定CVE编号以查询新上线业务系统相关CVE的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户希望基于互联网行业且已有技术方面的等保2.0整改资料来生成等保2.0整改的审计报告",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "审计报告生成"
+      }
+    ]
+  },
+  {
+    "query": "生成监管机构合规报告中安全合规与审计部分，扫描最近一个月内数据库及文件系统未加密敏感信息情况的整理报告内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要了解通用行业的安全防护方案、GDPR和数据安全法等法规条款以及漏洞风险评估相关内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "在授权环境下，对公司内部所有系统开展全面漏洞排查并执行PoC验证确认漏洞存在",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "关联本次告警中大量外连请求的攻击IP的地理位置、组织归属及历史活动",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "协助扫描数据库及文件系统，查找未加密的敏感信息以准备年度审计材料",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "敏感数据发现"
+      }
+    ]
+  },
+  {
+    "query": "用户申请开通系统运维与配置管理系统补丁分发批量更新权限",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "协助判断被隔离文件是否误报，调优SIEM/IDS规则减误报，投递可疑文件到沙箱获取报告",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户想要了解网络攻击类的黑客术语或缩写",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解补丁管理系统调度批量更新的具体操作步骤",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "本周需完成合规基线检查、系统补丁分发，并处理检测到的文件suspicious_6926.exe（Hash:7b94aa9d218f49eb636ba4bdc27382abdee2a2cf4d34109580a533e3d77642bc）相关安全任务",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "企业SOC安全运营人员需查询特定CVE编号的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "启动新上线业务系统的漏洞扫描并指定目标范围，同时检索GDPR、数据安全法相关条款",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "核查系统当前备份状态，制定因钓鱼邮件可能涉及勒索攻击场景的系统备份恢复流程，明确恢复时间节点与操作步骤",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为开通证书到期监控权限",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是开展身份权限审计，分析账户权限过度授权和幽灵账户情况，并检索安全设备操作手册及API文档",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "检索GDPR、数据安全法相关条款，同时检测PCAP包中的流量异常通信模式",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "需根据失败登录相关信息创建IT运维工单，涉及时间2026-03-09 10:27:27、用户user77、源IP192.168.241.152来推进协同处置",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户需要启动针对公司内部所有服务器的全面漏洞扫描任务",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户需要分析安全设备中CPU内存飙升的原因",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要检索历史中与某安全术语相关的实战攻防相似攻击案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想确认被杀毒软件隔离文件是否误报，并了解失陷主机发现中基于IOC或行为特征定位内网已受控终端的情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户需要企业最新安全防护方案，以及查询安全设备操作手册或API文档",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "安排相关人员尽快完成证书到期更换及防火墙策略的新增/修改工作，确保按时完成",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需开展证书更换、安全设备性能瓶颈分析、资产指纹识别，包含失败登录尝试及相关IP地址信息",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是查询特定CVE漏洞在企业相关系统的官方修复补丁及缓解措施，未明确具体CVE编号",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解新增或修改访问控制列表的权限申请情况",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户想排查2026年3月10日18时15分22秒、request_id为20260310181522NfJZPeIXaYksbnR8Azwy的Ark API调用超时问题中的补丁版本检查方面的原因",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户需要进行身份权限审计相关的排查",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要在今天对企业内部OA系统进行身份权限审计，分析账户权限是否存在过度授权或幽灵账户等情况并得出结果",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是对内部服务器启动漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户刚接触等保2.0整改，想了解关于身份权限审计的相关知识",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要提取威胁态势报告的摘要",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户需协助处理服务器可疑进程的安全事件响应与处置，同时针对勒索攻击场景启动系统备份恢复的数据恢复流程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "从被杀毒软件隔离文件的非结构化文本中提取IP、Hash并查询信誉，将安全事件转化为IT运维工单协同处理",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理其使用的XX杀毒软件中被杀毒隔离文件的误报问题以及规则和防火墙策略相关问题",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要基于提供的哈希值（如MD5/SHA1/SHA256）关联外部情报来分析被杀毒软件隔离的文件",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助处理证书更换、重启异常安全代理服务以及检索安全设备操作手册或API文档",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "查询最近公布的CVE漏洞相关信息，检索官方修复补丁或缓解措施并在授权环境下执行PoC代码验证漏洞",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "查询企业内部漏洞全流程（发现、工单流转、修复复测）的状态情况",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解VPN的例行维护步骤",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "在授权环境下，对企业全系统开展全面漏洞排查并执行PoC验证",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户想要查询安全设备操作手册的API",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需关联昨天晚上异常流量的攻击IP，进行地理位置、组织归属及历史活动溯源",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "用户想要查询最近7天的失陷主机告警",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 4,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "失陷主机发现"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解在XXCMDB中进入资产管理模块找到对应资产编辑证书属性来更新CMDB里资产属性的具体操作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对新上线业务系统进行资产指纹识别，包括查看系统的OS版本、开放端口和服务组件等",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 2,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "资产指纹识别"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取针对特定架构的最新安全防护方案建议，无具体特定架构参数需总结",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "防护方案建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为了解身份权限审计里账户的授权情况",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要最新企业安全防护方案以及检索历史相似实战攻防案例",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "实战攻防案例检索"
+      }
+    ]
+  },
+  {
+    "query": "用户关注到一条告警信息，显示有可疑出站连接，传输字节94MB，涉及文件Hash为8ac12ffb84769b952684aec7c367f6e71d87bc45b3946df104ade17a0ec61f4e",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  },
+  {
+    "query": "用户需要关于安全设备维护及扩容的相关建议",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 9,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资源扩容建议"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问等保2.0合规基线配置项的核查相关内容",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "合规基线检查"
+      }
+    ]
+  },
+  {
+    "query": "用户想要了解常见攻击类的黑客安全术语",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "用户需要提取昨晚异常流量的IOC并对其进行信誉查询",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "启动企业安全管控相关领域安全策略违规全面扫描，尽快生成报告用于年度审计，含失败登录尝试等示例信息",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "分析沙箱分析时触发的大量外连请求的具体威胁情况及相关细节",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 7,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "沙箱分析触发"
+      }
+    ]
+  },
+  {
+    "query": "用户需要创建包含2026-03-09 14:17:27发生的恶意软件签名检测告警（文件suspicious_2518.exe）的IT运维工单以协同处理高危安全事件",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "用户想知晓勒索攻击场景下系统备份恢复流程的具体步骤",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "系统备份恢复"
+      }
+    ]
+  },
+  {
+    "query": "用户需要重启异常安全代理服务",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是关联存在大量外连请求的攻击IP的地理位置、所属组织和历史活动情况进行溯源分析",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 3,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "攻击溯源"
+      }
+    ]
+  },
+  {
+    "query": "分析系统运维与配置管理中安全设备CPU/内存飙升原因及处理证书到期更换问题",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "检索CVE-2023-ABCD漏洞针对企业内部所有服务器架构、各类应用系统及网络设备的官方修复补丁或缓解措施",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 6,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "修复建议查询"
+      }
+    ]
+  },
+  {
+    "query": "用户希望获取GDPR和数据安全法中关于数据主体权利相关的条款内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "需开展等保2.0整改中日志完整性审计，检查企业内部各信息系统日志有无缺失、断档及被篡改迹象",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "对新上线业务系统开展包含CVSS漏洞危害分析、资产风险分析及从非结构化文本提取IP和Hash并查询信誉的安全评估",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      },
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解等保2.0整改中身份权限审计里分析账户权限过度授权和幽灵账户的相关分析方法",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 4,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "身份权限审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要查询文件名称为XXX.exe、哈希值为XXXXXX的被杀毒软件隔离文件是否误报并提取IOC",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是开展年度审计前的策略违规扫描，识别企业内违反安全策略的操作来进行年度审计准备",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "策略违规扫描"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解漏洞PoC的获取方式",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户想要查询商业网站SSL证书的有效期预警以及对应的应急处置事宜",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      },
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "协助检查企业内所有信息系统过去一年日志的完整性，包括是否有缺失、断档或篡改，参考示例日志[2026-03-08 22:39:27] ALERT: Suspicious outbound connection, bytes transferred: 17MB",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户需要协助处理开通修改VPN或系统访问权限配置的权限调整申请",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为在授权下执行PoC进行漏洞验证",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "调优规则来减少隔离文件的误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户希望梳理安全设备例行维护的开展方式",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 6,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "用户权限调整"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "协助开展最近一个月内各类系统日志的完整性审计，检查缺失、断档和被篡改迹象以完成合规报告日志审计部分",
+    "expected": [
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户希望针对Ark API调用超时（request_id:20260311062130QPePYVacPqlZq2DG03pJ）的问题，进行漏洞发现与管理中漏洞危害评估和PoC验证执行的操作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户当前的完整意图是在涉及系统运维配置管理中系统补丁分发权限申请的紧急情况下，先处理登录尝试失败的安全事件",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户希望使用Nessus对整个公司内网进行全面漏洞排查并启动漏洞扫描",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "分析安全设备例行维护时CPU/内存飙升的性能瓶颈原因",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解申请开通系统运维与配置管理中安全补丁分发权限的具体流程",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 5,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "安全补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户需排查异常告警中样本文件的具体标识、外连时间区间、目标地址及端口等信息来分析外连是否恶意并溯源处置",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要解释“沙箱逃逸”，检索某款防火墙设备操作手册，检查过去24小时网络日志的完整性情况",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      },
+      {
+        "main_intent_id": 3,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全合规与审计",
+        "sub_intent_name": "日志完整性审计"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为处理证书快到期问题并分析设备性能瓶颈",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 8,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "性能瓶颈告警分析"
+      }
+    ]
+  },
+  {
+    "query": "用户需要跟踪企业内部业务系统中漏洞从发现到修复复测的状态",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是获取最新安全防护方案并检索GDPR、数据安全法相关条款内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户需要立即终止服务器上正在运行的可疑进程",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是在合规授权内针对CVE漏洞在企业内部系统开展PoC验证检查",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户需要对防火墙中目标IP为192.168.1.100的进行隔离阻断",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "启动指定目标IP段的漏洞扫描并终止已发现的恶意进程，需明确目标IP段",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 2,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "进程强杀请求"
+      },
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 1,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞扫描启动"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为了解防火墙系统补丁分发的例行维护操作及相关事宜，需针对防火墙系统补丁分发开展例行维护工作并进行批量更新调度",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 2,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "系统补丁分发"
+      }
+    ]
+  },
+  {
+    "query": "用户意图为请求提供最新安全防护方案并检索安全设备操作手册或API文档的系统手册内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "修正CMDB中证书快到期的资产属性信息",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 3,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "资产信息更新"
+      }
+    ]
+  },
+  {
+    "query": "需在下周内开展全面漏洞排查，重点核实公司所有IT资产关键安全补丁安装版本情况，完成服务器、工作站等资产补丁版本检查并输出报告",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 3,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "补丁版本检查"
+      }
+    ]
+  },
+  {
+    "query": "用户希望获取涵盖常见基础且复杂黑客术语的文字文档形式的安全培训材料资料",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      }
+    ]
+  },
+  {
+    "query": "分析昨晚异常流量对应的PCAP包或流日志的通信模式",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是查询《通用数据保护条例》和《中华人民共和国数据安全法》中关于数据保护范围、企业合规要求、违规责任的具体条文内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户想了解钓鱼邮件处置标准作业程序中初步响应环节的相关内容",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "应急处置建议"
+      }
+    ]
+  },
+  {
+    "query": "协助检查近期CVE漏洞在用户系统中的存在情况，授权下运行PoC验证，明确系统范围并针对最新CVE开展验证",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是进行授权验证新系统的PoC相关操作",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "提取文本中的文件Hash（1d07128a154ff37fc9dd8a782575203689eff47d43dd929137b7be0ba6beae6c）并查询其信誉状况以确定文件是否有安全威胁",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问昨晚异常流量检测的相关情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "分析当前流量异常检测中大量外连请求的具体IP、时间范围、安全风险及异常通信模式",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理服务器可疑进程的隔离阻断，且已提供可疑进程所在主机的IP或主机名",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "隔离阻断指令"
+      }
+    ]
+  },
+  {
+    "query": "检索GDPR与《中华人民共和国数据安全法》中企业数据保护相关条款内容",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 3,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全法律法规检索"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是从被杀毒软件隔离文件非结构化文本提取IP、Hash等IOC信息并查询其信誉情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 5,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "IOC提取与检索"
+      }
+    ]
+  },
+  {
+    "query": "用户希望将用户收到钓鱼邮件的事宜创建为IT运维工单进行协同处理",
+    "expected": [
+      {
+        "main_intent_id": 4,
+        "sub_intent_id": 7,
+        "main_intent_name": "安全事件响应与处置",
+        "sub_intent_name": "联动工单创建"
+      }
+    ]
+  },
+  {
+    "query": "对昨晚异常流量样本进行静态特征提取，查询SSL证书有效期并预警",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 1,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "恶意代码分析"
+      },
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 7,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "证书到期监控"
+      }
+    ]
+  },
+  {
+    "query": "用户需求为解释APT含义并查询公司部署的XX防火墙设备操作手册",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 1,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "安全术语解释"
+      },
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 6,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "系统手册查询"
+      }
+    ]
+  },
+  {
+    "query": "协助开展防火墙访问控制列表例行新增或修改策略的下发维护工作",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 1,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "防火墙策略下发"
+      }
+    ]
+  },
+  {
+    "query": "用户希望用情报库将本地警报与外部威胁情报进行关联来排查昨晚同事提到的异常流量相关问题",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户需要处理安全代理服务出现的重启卡死或异常问题",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "协助调优SIEM或IDS规则，排查杀毒软件隔离文件误报并降低误报率",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 8,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "检测规则调优"
+      }
+    ]
+  },
+  {
+    "query": "用户需要进行新上线业务系统漏洞的PoC验证",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 4,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "PoC验证执行"
+      }
+    ]
+  },
+  {
+    "query": "针对新上线业务系统，依据CVSS评分与资产重要性分析其各漏洞风险等级，评估范围为系统全部组件及功能，需尽快完成评估任务",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 5,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞危害评估"
+      }
+    ]
+  },
+  {
+    "query": "查询最近新公布的CVE漏洞，跟踪其在本企业系统中从发现到修复复测的全流程状态",
+    "expected": [
+      {
+        "main_intent_id": 2,
+        "sub_intent_id": 7,
+        "main_intent_name": "漏洞发现与管理",
+        "sub_intent_name": "漏洞生命周期跟踪"
+      }
+    ]
+  },
+  {
+    "query": "重启系统运维与配置管理中卡死或异常的安全代理服务进行例行维护",
+    "expected": [
+      {
+        "main_intent_id": 6,
+        "sub_intent_id": 4,
+        "main_intent_name": "系统运维与配置管理",
+        "sub_intent_name": "服务重启指令"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是询问流量异常外连是什么情况",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 2,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "流量异常检测"
+      }
+    ]
+  },
+  {
+    "query": "对被隔离文件开展威胁检测与识别，同时关联外部情报库查询是否为误报",
+    "expected": [
+      {
+        "main_intent_id": 1,
+        "sub_intent_id": 6,
+        "main_intent_name": "威胁检测与识别",
+        "sub_intent_name": "情报库关联查询"
+      }
+    ]
+  },
+  {
+    "query": "用户意图是了解最新的安全防护方案",
+    "expected": [
+      {
+        "main_intent_id": 5,
+        "sub_intent_id": 5,
+        "main_intent_name": "安全知识问答与教育",
+        "sub_intent_name": "行业研报分析总结"
+      }
+    ]
+  }
+]

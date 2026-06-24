@@ -1,0 +1,660 @@
+/home/tiger/.local/lib/python3.9/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+run sh: `/usr/bin/python3 /mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/cli/sft.py --model Qwen/Qwen3-8B --train_type lora --dataset /mlx_devbox/users/wuchuncheng/playground/security_intent/data/train.jsonl --split_dataset_ratio 0.05 --loss_scale ignore_empty_think --torch_dtype float16 --num_train_epochs 2 --per_device_train_batch_size 16 --per_device_eval_batch_size 16 --learning_rate 1e-4 --lora_rank 8 --lora_alpha 32 --target_modules all-linear --gradient_accumulation_steps 16 --eval_steps 50 --save_steps 50 --save_total_limit 10 --logging_steps 5 --max_length 2048 --output_dir /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1 --warmup_ratio 0.05 --dataloader_num_workers 4 --model_author swift --model_name swift-robot`
+/home/tiger/.local/lib/python3.9/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[INFO:swift] Successfully registered `/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/data/dataset_info.json`.
+[INFO:swift] rank: -1, local_rank: -1, world_size: 1, local_world_size: 1
+[INFO:swift] Downloading the model from ModelScope Hub, model_id: Qwen/Qwen3-8B
+[INFO:swift] Loading the model using model_dir: /home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B
+[INFO:swift] Setting args.lazy_tokenize: False
+[INFO:swift] output_dir: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920
+[INFO:swift] Global seed set to 42
+[INFO:swift] args: TrainArguments(
+_n_gpu=-1,
+acc_strategy=token,
+accelerator_config={'dispatch_batches': False},
+adafactor=False,
+adalora_beta1=0.85,
+adalora_beta2=0.85,
+adalora_deltaT=1,
+adalora_init_r=12,
+adalora_orth_reg_weight=0.5,
+adalora_target_r=8,
+adalora_tfinal=0,
+adalora_tinit=0,
+adam_beta1=0.9,
+adam_beta2=0.95,
+adam_epsilon=1e-08,
+adapter_act=gelu,
+adapter_length=128,
+adapters=[],
+add_version=True,
+agent_template=None,
+aligner_lr=None,
+attn_impl=None,
+auto_find_batch_size=False,
+average_tokens_across_devices=False,
+batch_eval_metrics=False,
+bf16=False,
+bf16_full_eval=False,
+bnb_4bit_compute_dtype=torch.float32,
+bnb_4bit_quant_storage=None,
+bnb_4bit_quant_type=nf4,
+bnb_4bit_use_double_quant=True,
+boft_block_num=0,
+boft_block_size=4,
+boft_dropout=0.0,
+boft_n_butterfly_factor=1,
+cached_dataset=[],
+check_model=True,
+ckpt_dir=None,
+columns={},
+create_checkpoint_symlink=False,
+custom_dataset_info=[],
+custom_register_path=[],
+data_seed=42,
+dataloader_drop_last=False,
+dataloader_num_workers=4,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+dataset=['/mlx_devbox/users/wuchuncheng/playground/security_intent/data/train.jsonl'],
+dataset_num_proc=1,
+dataset_shuffle=True,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=18000000,
+debug=None,
+deepspeed=None,
+deepspeed_autotp_size=None,
+device_groups=None,
+device_map=None,
+disable_tqdm=None,
+do_eval=False,
+do_predict=False,
+do_train=False,
+download_mode=reuse_dataset_if_exists,
+ds3_gather_for_generation=True,
+early_stop_interval=None,
+enable_channel_loss=False,
+enable_dft_loss=False,
+eval_accumulation_steps=None,
+eval_dataset=[],
+eval_dataset_args=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_generation_config=None,
+eval_limit=None,
+eval_on_start=False,
+eval_steps=50.0,
+eval_strategy=steps,
+eval_use_evalscope=False,
+eval_use_gather_object=False,
+external_plugins=[],
+extra_eval_args=None,
+fourier_n_frequency=2000,
+fourier_scaling=300.0,
+fp16=True,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+freeze_aligner=True,
+freeze_llm=False,
+freeze_parameters=[],
+freeze_parameters_ratio=0.0,
+freeze_parameters_regex=None,
+freeze_vit=True,
+fsdp=,
+fsdp_config=None,
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+galore_cos_threshold=0.4,
+galore_gamma_proj=2,
+galore_optim_per_parameter=False,
+galore_proj_bits=4,
+galore_proj_group_size=256,
+galore_proj_quant=False,
+galore_proj_type=std,
+galore_quantization=False,
+galore_queue_size=5,
+galore_rank=128,
+galore_scale=1.0,
+galore_target_modules=None,
+galore_update_proj_gap=50,
+galore_with_embedding=False,
+generation_config=None,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=16,
+gradient_checkpointing=True,
+gradient_checkpointing_kwargs=None,
+greater_is_better=False,
+group_by_length=False,
+half_precision_backend=auto,
+hqq_axis=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_args_error=False,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_inputs_for_metrics=False,
+include_num_input_tokens_seen=False,
+include_tokens_per_second=False,
+init_strategy=None,
+init_weights=True,
+interleave_prob=None,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+lazy_tokenize=False,
+learning_rate=0.0001,
+length_column_name=length,
+lisa_activated_layers=0,
+lisa_step_interval=20,
+llamapro_num_groups=None,
+llamapro_num_new_blocks=4,
+load_args=False,
+load_best_model_at_end=False,
+load_data_args=False,
+load_from_cache_file=False,
+local_rank=-1,
+local_repo_path=None,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=/mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/runs,
+logging_first_step=True,
+logging_nan_inf_filter=True,
+logging_steps=5,
+logging_strategy=steps,
+logprobs=False,
+lora_alpha=32,
+lora_bias=none,
+lora_dropout=0.05,
+lora_dtype=None,
+lora_ga_batch_size=2,
+lora_ga_direction=ArB2r,
+lora_ga_iters=2,
+lora_ga_max_length=1024,
+lora_ga_scale=stable,
+lora_ga_stable_gamma=16,
+lora_modules=[],
+lora_rank=8,
+lorap_lr_ratio=None,
+loss_scale=ignore_empty_think,
+loss_type=None,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=cosine,
+max_epochs=None,
+max_grad_norm=1.0,
+max_length=2048,
+max_memory={},
+max_model_len=None,
+max_new_tokens=64,
+max_pixels=None,
+max_steps=-1,
+metric=None,
+metric_for_best_model=loss,
+model=Qwen/Qwen3-8B,
+model_author=['swift'],
+model_kwargs={},
+model_name=['swift-robot'],
+model_revision=None,
+model_type=qwen3,
+modules_to_save=[],
+mp_parameters=,
+neftune_noise_alpha=None,
+new_special_tokens=[],
+no_cuda=False,
+norm_bbox=None,
+num_beams=1,
+num_labels=None,
+num_train_epochs=2.0,
+optim=adamw_torch,
+optim_args=None,
+optim_target_modules=None,
+optimizer=None,
+output_dir=/mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920,
+overwrite_output_dir=False,
+packing=False,
+packing_length=None,
+packing_num_proc=1,
+padding_free=False,
+padding_side=right,
+past_index=-1,
+per_device_eval_batch_size=16,
+per_device_train_batch_size=16,
+predict_with_generate=False,
+prediction_loss_only=False,
+problem_type=None,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+quant_bits=None,
+quant_method=None,
+ray_exp_name=None,
+ray_scope=last,
+reft_args=None,
+reft_intervention_type=LoreftIntervention,
+reft_layer_key=None,
+reft_layers=None,
+reft_rank=4,
+remove_unused_columns=True,
+repetition_penalty=None,
+report_to=['tensorboard'],
+response_prefix=None,
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+resume_only_model=False,
+rope_scaling=None,
+router_aux_loss_coef=0.0,
+run_name=/mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920,
+save_on_each_node=False,
+save_only_model=False,
+save_safetensors=True,
+save_steps=50.0,
+save_strategy=steps,
+save_total_limit=10,
+seed=42,
+sequence_parallel_size=1,
+shuffle_buffer_size=1000,
+skip_memory_metrics=True,
+sortish_sampler=False,
+split_dataset_ratio=0.05,
+stop_words=[],
+stopping_strategy=first_exhausted,
+stream=False,
+streaming=False,
+strict=False,
+swanlab_exp_name=None,
+swanlab_lark_secret=None,
+swanlab_lark_webhook_url=None,
+swanlab_mode=cloud,
+swanlab_project=None,
+swanlab_token=<SWANLAB_TOKEN>,
+swanlab_workspace=None,
+system=None,
+target_modules=['all-linear'],
+target_parameters=None,
+target_regex=None,
+task_type=causal_lm,
+temperature=0.0,
+template=qwen3,
+template_backend=swift,
+tf32=None,
+top_k=None,
+top_logprobs=None,
+top_p=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_dtype=torch.float16,
+torch_empty_cache_steps=None,
+torchdynamo=None,
+tp_size=0,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+train_dataloader_shuffle=True,
+train_type=lora,
+trainable_parameters=[],
+trainable_parameters_regex=None,
+truncation_strategy=delete,
+tuner_backend=peft,
+use_chat_template=True,
+use_cpu=False,
+use_dora=False,
+use_flash_ckpt=False,
+use_galore=False,
+use_hf=False,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_liger_kernel=False,
+use_logits_to_keep=None,
+use_mps_device=False,
+use_ray=False,
+use_rslora=False,
+use_swift_lora=False,
+val_dataset=[],
+val_dataset_shuffle=False,
+vera_d_initial=0.1,
+vera_dropout=0.0,
+vera_projection_prng_key=0,
+vera_rank=256,
+vit_gradient_checkpointing=None,
+vit_lr=None,
+warmup_ratio=0.05,
+warmup_steps=0,
+weight_decay=0.1,
+zero_hpz_partition_size=None,
+)
+[INFO:swift] Downloading the model from ModelScope Hub, model_id: Qwen/Qwen3-8B
+[INFO:swift] Loading the model using model_dir: /home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B
+[INFO:swift] model_kwargs: {'device_map': 'cuda:0', 'torch_dtype': torch.float16}
+Downloading Model from https://www.modelscope.cn to directory: /home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B
+Downloading Model from https://www.modelscope.cn to directory: /home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.06it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.24it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.34it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.50it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.99it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.62it/s]
+[INFO:swift] model.hf_device_map: {'': device(type='cuda', index=0)}
+[INFO:swift] model_info: ModelInfo(model_type='qwen3', model_dir='/home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B', torch_dtype=torch.float16, max_model_len=40960, quant_method=None, quant_bits=None, rope_scaling=None, is_moe_model=False, config=Qwen3Config {
+  "_attn_implementation_autoset": true,
+  "architectures": [
+    "Qwen3ForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 12288,
+  "max_position_embeddings": 40960,
+  "max_window_layers": 36,
+  "model_type": "qwen3",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 8,
+  "pad_token_id": 151643,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000,
+  "sliding_window": null,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.51.3",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+, task_type='causal_lm', num_labels=None)
+[INFO:swift] model.generation_config: GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "max_new_tokens": 64,
+  "pad_token_id": 151643
+}
+
+[INFO:swift] default_system: None
+[INFO:swift] max_length: 2048
+[INFO:swift] response_prefix: ''
+[INFO:swift] agent_template: hermes
+[INFO:swift] Start time of running main: 2026-03-12 00:29:24.931531
+[INFO:swift] swift.__version__: 3.11.0.dev0
+[INFO:swift] SelfCognitionPreprocessor has been successfully configured with name: ('swift-robot', 'swift-robot'), author: ('swift', 'swift').
+Map:   0%|          | 0/18000 [00:00<?, ? examples/s]Map:  11%|█         | 2000/18000 [00:00<00:00, 17515.93 examples/s]Map:  28%|██▊       | 5000/18000 [00:00<00:00, 19289.42 examples/s]Map:  50%|█████     | 9000/18000 [00:00<00:00, 20335.92 examples/s]Map:  67%|██████▋   | 12000/18000 [00:00<00:00, 20520.78 examples/s]Map:  89%|████████▉ | 16000/18000 [00:00<00:00, 20270.38 examples/s]Map: 100%|██████████| 18000/18000 [00:00<00:00, 19176.76 examples/s]
+[INFO:swift] train_dataset: Dataset({
+    features: ['messages'],
+    num_rows: 17100
+})
+[INFO:swift] val_dataset: Dataset({
+    features: ['messages'],
+    num_rows: 900
+})
+[INFO:swift] The split dataset from the training set will be saved at: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/val_dataset.jsonl.
+Map:   0%|          | 0/17100 [00:00<?, ? examples/s]Map:   6%|▌         | 1000/17100 [00:01<00:24, 667.69 examples/s]Map:  12%|█▏        | 2000/17100 [00:02<00:22, 679.57 examples/s]Map:  18%|█▊        | 3000/17100 [00:04<00:20, 683.45 examples/s][INFO:swift] Traceback (most recent call last):
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/preprocessor/core.py", line 178, in batched_preprocess
+    row = self.preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 323, in preprocess
+    encoded = super().preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 317, in preprocess
+    return self.template.encode(row, return_length=True)
+  File "/home/tiger/.local/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 508, in encode
+    encoded = self._encode_truncated(chosen)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 1235, in _encode_truncated
+    raise MaxLengthError(f'Current length of row({length}) is larger'
+swift.llm.template.base.MaxLengthError: Current length of row(4813) is larger than the max_length(2048).
+
+[WARNING:swift] 👆👆👆There are errors in the dataset, the data will be deleted
+Map:  23%|██▎       | 4000/17100 [00:05<00:19, 684.02 examples/s]Map:  29%|██▉       | 5000/17100 [00:07<00:17, 686.18 examples/s]Map:  35%|███▌      | 6000/17100 [00:08<00:16, 688.38 examples/s]Map:  41%|████      | 7000/17100 [00:10<00:14, 689.66 examples/s][INFO:swift] Traceback (most recent call last):
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/preprocessor/core.py", line 178, in batched_preprocess
+    row = self.preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 323, in preprocess
+    encoded = super().preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 317, in preprocess
+    return self.template.encode(row, return_length=True)
+  File "/home/tiger/.local/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 508, in encode
+    encoded = self._encode_truncated(chosen)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 1235, in _encode_truncated
+    raise MaxLengthError(f'Current length of row({length}) is larger'
+swift.llm.template.base.MaxLengthError: Current length of row(3963) is larger than the max_length(2048).
+
+[WARNING:swift] 👆👆👆There are errors in the dataset, the data will be deleted
+Map:  47%|████▋     | 8000/17100 [00:11<00:13, 691.30 examples/s]Map:  53%|█████▎    | 9000/17100 [00:13<00:11, 691.88 examples/s]Map:  58%|█████▊    | 10000/17100 [00:14<00:10, 693.13 examples/s]Map:  64%|██████▍   | 11000/17100 [00:15<00:08, 693.46 examples/s]Map:  70%|███████   | 12000/17100 [00:17<00:07, 692.56 examples/s][INFO:swift] Traceback (most recent call last):
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/preprocessor/core.py", line 178, in batched_preprocess
+    row = self.preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 323, in preprocess
+    encoded = super().preprocess(row)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/dataset/utils.py", line 317, in preprocess
+    return self.template.encode(row, return_length=True)
+  File "/home/tiger/.local/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 508, in encode
+    encoded = self._encode_truncated(chosen)
+  File "/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/llm/template/base.py", line 1235, in _encode_truncated
+    raise MaxLengthError(f'Current length of row({length}) is larger'
+swift.llm.template.base.MaxLengthError: Current length of row(4049) is larger than the max_length(2048).
+
+[WARNING:swift] 👆👆👆There are errors in the dataset, the data will be deleted
+Map:  76%|███████▌  | 13000/17100 [00:18<00:05, 689.98 examples/s]Map:  82%|████████▏ | 14000/17100 [00:20<00:04, 692.17 examples/s]Map:  88%|████████▊ | 15000/17100 [00:21<00:03, 692.80 examples/s]Map:  94%|█████████▎| 16000/17100 [00:23<00:01, 692.17 examples/s]Map:  99%|█████████▉| 17000/17100 [00:24<00:00, 692.93 examples/s]Map: 100%|██████████| 17100/17100 [00:24<00:00, 691.62 examples/s]Map: 100%|██████████| 17100/17100 [00:24<00:00, 689.14 examples/s]
+[INFO:swift] Dataset filtered, origin length: 17100, filtered dataset length: 17097
+Map:   0%|          | 0/900 [00:00<?, ? examples/s]Map: 100%|██████████| 900/900 [00:01<00:00, 692.97 examples/s]Map: 100%|██████████| 900/900 [00:01<00:00, 688.69 examples/s]
+[INFO:swift] [INPUT_IDS] [151644, 8948, 198, 56568, 101909, 104715, 111450, 102450, 110498, 1773, 14880, 100345, 105051, 102285, 16744, 102450, 20002, 111450, 1773, 66017, 68805, 100645, 17714, 4718, 47685, 40027, 3837, 102298, 5122, 3817, 94249, 842, 11, 1887, 94249, 1269, 11, 1186, 94249, 842, 11, 1186, 94249, 1269, 1773, 151645, 198, 151644, 872, 198, 20002, 25, 220, 114843, 99464, 101259, 198, 110498, 25, 220, 109194, 87026, 85106, 114843, 106552, 101259, 20412, 87752, 113195, 101044, 101913, 94432, 20002, 25, 220, 89047, 32, 198, 110498, 25, 50042, 85106, 114843, 89047, 32, 101913, 99464, 101259, 151645, 198, 151644, 77091, 198, 151667, 271, 151668, 271, 58, 4913, 3817, 94249, 842, 788, 220, 21, 11, 330, 3817, 94249, 1269, 788, 330, 72448, 113308, 57218, 85767, 39352, 497, 330, 1966, 94249, 842, 788, 220, 19, 11, 330, 1966, 94249, 1269, 788, 330, 47874, 114843, 109504, 9207, 60, 151645, 198]
+[INFO:swift] [INPUT] <|im_start|>system
+你是一个专业的意图识别助手。请根据对话上下文识别用户意图。输出格式必须为 JSON 数组，包含：main_intent_id, main_intent_name, sub_intent_id, sub_intent_name。<|im_end|>
+<|im_start|>user
+用户: 重启安全代理
+助手: 请问您需要重启的安全代理是以下哪种设备上的？
+用户: 服务器A
+助手: 用户需要重启服务器A上的安全代理<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+[{"main_intent_id": 6, "main_intent_name": "系统运维与配置管理", "sub_intent_id": 4, "sub_intent_name": "服务重启指令"}]<|im_end|>
+
+[INFO:swift] [LABELS_IDS] [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 58, 4913, 3817, 94249, 842, 788, 220, 21, 11, 330, 3817, 94249, 1269, 788, 330, 72448, 113308, 57218, 85767, 39352, 497, 330, 1966, 94249, 842, 788, 220, 19, 11, 330, 1966, 94249, 1269, 788, 330, 47874, 114843, 109504, 9207, 60, 151645, 198]
+[INFO:swift] [LABELS] [-100 * 97][{"main_intent_id": 6, "main_intent_name": "系统运维与配置管理", "sub_intent_id": 4, "sub_intent_name": "服务重启指令"}]<|im_end|>
+
+[INFO:swift] Dataset Token Length: 209.550097±60.333464, min=114.000000, max=1791.000000, size=17097
+[INFO:swift] Dataset Token Length: 207.395556±57.364673, min=119.000000, max=461.000000, size=900
+[INFO:swift] The TrainArguments will be saved in: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/args.json
+[INFO:swift] lora_config: LoraConfig(task_type='CAUSAL_LM', peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path='/home/tiger/.cache/modelscope/hub/models/Qwen/Qwen3-8B', revision=None, inference_mode=False, r=8, target_modules={'down_proj', 'gate_proj', 'o_proj', 'v_proj', 'k_proj', 'q_proj', 'up_proj'}, exclude_modules=None, lora_alpha=32, lora_dropout=0.05, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=[], init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, eva_config=None, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False), lora_bias=False, lora_dtype=None, lorap_lr_ratio=None, lorap_emb_lr=1e-06)
+[INFO:swift] model: PeftModelForCausalLM(
+  (base_model): LoraModel(
+    (model): Qwen3ForCausalLM(
+      (model): Qwen3Model(
+        (embed_tokens): Embedding(151936, 4096)
+        (layers): ModuleList(
+          (0-35): 36 x Qwen3DecoderLayer(
+            (self_attn): Qwen3Attention(
+              (q_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (k_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (v_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=1024, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (o_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (q_norm): Qwen3RMSNorm((128,), eps=1e-06)
+              (k_norm): Qwen3RMSNorm((128,), eps=1e-06)
+            )
+            (mlp): Qwen3MLP(
+              (gate_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (up_proj): lora.Linear(
+                (base_layer): Linear(in_features=4096, out_features=12288, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=4096, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=12288, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (down_proj): lora.Linear(
+                (base_layer): Linear(in_features=12288, out_features=4096, bias=False)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=12288, out_features=8, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=8, out_features=4096, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (act_fn): SiLU()
+            )
+            (input_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+            (post_attention_layernorm): Qwen3RMSNorm((4096,), eps=1e-06)
+          )
+        )
+        (norm): Qwen3RMSNorm((4096,), eps=1e-06)
+        (rotary_emb): Qwen3RotaryEmbedding()
+      )
+      (lm_head): Linear(in_features=4096, out_features=151936, bias=False)
+    )
+  )
+)
+[INFO:swift] model_parameter_info: PeftModelForCausalLM: 8212.5588M Params (21.8235M Trainable [0.2657%]), 0.0001M Buffers.
+/mlx_devbox/users/wuchuncheng/playground/ms-swift/swift/trainers/mixin.py:52: FutureWarning: Support for Python 3.9 will be dropped in the next release (after its end-of-life on October 31, 2025). Please upgrade to Python 3.10 or newer.
+  from trl import AutoModelForCausalLMWithValueHead
+Detected kernel version 5.4.143, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+[INFO:swift] use_reentrant: True
+[INFO:swift] The logging file will be saved in: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/logging.jsonl
+Train:   0%|          | 0/132 [00:00<?, ?it/s][INFO:swift] use_logits_to_keep: True
+Train:   1%|          | 1/132 [00:33<1:12:27, 33.19s/it]                                                        Train:   1%|          | 1/132 [00:33<1:12:27, 33.19s/it]Train:   1%|          | 1/132 [00:33<1:12:27, 33.19s/it]Train:   2%|▏         | 2/132 [01:07<1:12:56, 33.66s/it]Train:   2%|▏         | 3/132 [01:40<1:12:25, 33.68s/it]Train:   3%|▎         | 4/132 [02:15<1:12:51, 34.16s/it]Train:   4%|▍         | 5/132 [02:49<1:11:54, 33.97s/it]                                                        Train:   4%|▍         | 5/132 [02:49<1:11:54, 33.97s/it]Train:   4%|▍         | 5/132 [02:49<1:11:54, 33.97s/it]Train:   5%|▍         | 6/132 [03:26<1:13:30, 35.01s/it]Train:   5%|▌         | 7/132 [04:03<1:14:37, 35.82s/it]Train:   6%|▌         | 8/132 [04:37<1:12:31, 35.09s/it]Train:   7%|▋         | 9/132 [05:11<1:11:08, 34.71s/it]Train:   8%|▊         | 10/132 [05:49<1:12:47, 35.80s/it]                                                         Train:   8%|▊         | 10/132 [05:49<1:12:47, 35.80s/it]Train:   8%|▊         | 10/132 [05:49<1:12:47, 35.80s/it]Train:   8%|▊         | 11/132 [06:24<1:11:48, 35.60s/it]Train:   9%|▉         | 12/132 [06:58<1:09:55, 34.96s/it]Train:  10%|▉         | 13/132 [07:33<1:09:33, 35.07s/it]Train:  11%|█         | 14/132 [08:08<1:08:48, 34.99s/it]Train:  11%|█▏        | 15/132 [08:44<1:08:51, 35.31s/it]                                                         Train:  11%|█▏        | 15/132 [08:44<1:08:51, 35.31s/it]Train:  11%|█▏        | 15/132 [08:44<1:08:51, 35.31s/it]Train:  12%|█▏        | 16/132 [09:18<1:07:32, 34.94s/it]Train:  13%|█▎        | 17/132 [09:53<1:07:13, 35.07s/it]Train:  14%|█▎        | 18/132 [10:27<1:05:53, 34.68s/it]Train:  14%|█▍        | 19/132 [11:05<1:07:03, 35.61s/it]Train:  15%|█▌        | 20/132 [11:40<1:05:57, 35.34s/it]                                                         Train:  15%|█▌        | 20/132 [11:40<1:05:57, 35.34s/it]Train:  15%|█▌        | 20/132 [11:40<1:05:57, 35.34s/it]Train:  16%|█▌        | 21/132 [12:14<1:04:56, 35.10s/it]Train:  17%|█▋        | 22/132 [12:48<1:03:47, 34.79s/it]Train:  17%|█▋        | 23/132 [13:23<1:02:56, 34.65s/it]Train:  18%|█▊        | 24/132 [13:59<1:03:32, 35.30s/it]Train:  19%|█▉        | 25/132 [14:35<1:02:53, 35.27s/it]                                                         Train:  19%|█▉        | 25/132 [14:35<1:02:53, 35.27s/it]Train:  19%|█▉        | 25/132 [14:35<1:02:53, 35.27s/it]Train:  20%|█▉        | 26/132 [15:11<1:02:59, 35.65s/it]Train:  20%|██        | 27/132 [15:44<1:01:12, 34.97s/it]Train:  21%|██        | 28/132 [16:22<1:01:46, 35.64s/it]Train:  22%|██▏       | 29/132 [16:55<1:00:11, 35.06s/it]Train:  23%|██▎       | 30/132 [17:30<59:33, 35.03s/it]                                                         Train:  23%|██▎       | 30/132 [17:30<59:33, 35.03s/it]Train:  23%|██▎       | 30/132 [17:30<59:33, 35.03s/it]Train:  23%|██▎       | 31/132 [18:05<58:35, 34.81s/it]Train:  24%|██▍       | 32/132 [18:43<59:53, 35.94s/it]Train:  25%|██▌       | 33/132 [19:19<59:05, 35.81s/it]Train:  26%|██▌       | 34/132 [19:53<57:56, 35.47s/it]Train:  27%|██▋       | 35/132 [20:30<57:54, 35.82s/it]                                                       Train:  27%|██▋       | 35/132 [20:30<57:54, 35.82s/it]Train:  27%|██▋       | 35/132 [20:30<57:54, 35.82s/it]Train:  27%|██▋       | 36/132 [21:06<57:22, 35.86s/it]Train:  28%|██▊       | 37/132 [21:40<56:05, 35.42s/it]Train:  29%|██▉       | 38/132 [22:13<54:11, 34.59s/it]Train:  30%|██▉       | 39/132 [22:49<54:13, 34.98s/it]Train:  30%|███       | 40/132 [23:21<52:29, 34.24s/it]                                                       Train:  30%|███       | 40/132 [23:21<52:29, 34.24s/it]Train:  30%|███       | 40/132 [23:21<52:29, 34.24s/it]Train:  31%|███       | 41/132 [23:57<52:21, 34.53s/it]Train:  32%|███▏      | 42/132 [24:33<52:35, 35.06s/it]Train:  33%|███▎      | 43/132 [25:08<51:48, 34.93s/it]Train:  33%|███▎      | 44/132 [25:44<51:52, 35.37s/it]Train:  34%|███▍      | 45/132 [26:18<50:33, 34.86s/it]                                                       Train:  34%|███▍      | 45/132 [26:18<50:33, 34.86s/it]Train:  34%|███▍      | 45/132 [26:18<50:33, 34.86s/it]Train:  35%|███▍      | 46/132 [26:54<50:28, 35.22s/it]Train:  36%|███▌      | 47/132 [27:28<49:42, 35.08s/it]Train:  36%|███▋      | 48/132 [28:05<49:42, 35.51s/it]Train:  37%|███▋      | 49/132 [28:42<49:46, 35.98s/it]Train:  38%|███▊      | 50/132 [29:18<49:16, 36.06s/it]                                                       Train:  38%|███▊      | 50/132 [29:18<49:16, 36.06s/it]Train:  38%|███▊      | 50/132 [29:18<49:16, 36.06s/it]{'loss': 1.77479708, 'grad_norm': 6.71209192, 'learning_rate': 1.429e-05, 'token_acc': 0.76658971, 'epoch': 0.01, 'global_step/max_steps': '1/132', 'percentage': '0.76%', 'elapsed_time': '33s', 'remaining_time': '1h 12m 28s', 'memory(GiB)': 34.22, 'train_speed(iter/s)': 0.030126}
+{'loss': 1.50161111, 'grad_norm': 5.04924297, 'learning_rate': 7.143e-05, 'token_acc': 0.77857519, 'epoch': 0.07, 'global_step/max_steps': '5/132', 'percentage': '3.79%', 'elapsed_time': '2m 49s', 'remaining_time': '1h 11m 43s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.029512}
+{'loss': 0.73865366, 'grad_norm': 0.57112139, 'learning_rate': 9.986e-05, 'token_acc': 0.82197163, 'epoch': 0.15, 'global_step/max_steps': '10/132', 'percentage': '7.58%', 'elapsed_time': '5m 49s', 'remaining_time': '1h 11m 4s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028607}
+{'loss': 0.51112704, 'grad_norm': 0.46098673, 'learning_rate': 9.899e-05, 'token_acc': 0.86153087, 'epoch': 0.22, 'global_step/max_steps': '15/132', 'percentage': '11.36%', 'elapsed_time': '8m 44s', 'remaining_time': '1h 8m 10s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028604}
+{'loss': 0.36499305, 'grad_norm': 0.36276063, 'learning_rate': 9.735e-05, 'token_acc': 0.89604926, 'epoch': 0.3, 'global_step/max_steps': '20/132', 'percentage': '15.15%', 'elapsed_time': '11m 40s', 'remaining_time': '1h 5m 20s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028567}
+{'loss': 0.27477684, 'grad_norm': 0.35144952, 'learning_rate': 9.497e-05, 'token_acc': 0.91497594, 'epoch': 0.37, 'global_step/max_steps': '25/132', 'percentage': '18.94%', 'elapsed_time': '14m 35s', 'remaining_time': '1h 2m 25s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.02857}
+{'loss': 0.21738174, 'grad_norm': 0.27885306, 'learning_rate': 9.188e-05, 'token_acc': 0.92694928, 'epoch': 0.45, 'global_step/max_steps': '30/132', 'percentage': '22.73%', 'elapsed_time': '17m 30s', 'remaining_time': '59m 32s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028548}
+{'loss': 0.16409599, 'grad_norm': 0.28007913, 'learning_rate': 8.812e-05, 'token_acc': 0.9403219, 'epoch': 0.52, 'global_step/max_steps': '35/132', 'percentage': '26.52%', 'elapsed_time': '20m 30s', 'remaining_time': '56m 50s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028443}
+{'loss': 0.1230834, 'grad_norm': 0.36950964, 'learning_rate': 8.377e-05, 'token_acc': 0.95551931, 'epoch': 0.6, 'global_step/max_steps': '40/132', 'percentage': '30.30%', 'elapsed_time': '23m 21s', 'remaining_time': '53m 44s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028532}
+{'loss': 0.09894508, 'grad_norm': 0.44589716, 'learning_rate': 7.888e-05, 'token_acc': 0.96366066, 'epoch': 0.67, 'global_step/max_steps': '45/132', 'percentage': '34.09%', 'elapsed_time': '26m 18s', 'remaining_time': '50m 51s', 'memory(GiB)': 68.19, 'train_speed(iter/s)': 0.028514}
+{'loss': 0.08358064, 'grad_norm': 0.22979321, 'learning_rate': 7.354e-05, 'token_acc': 0.96820641, 'epoch': 0.75, 'global_step/max_steps': '50/132', 'percentage': '37.88%', 'elapsed_time': '29m 18s', 'remaining_time': '48m 4s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.028429}
+
+Val:   0%|          | 0/57 [00:00<?, ?it/s]Val:   4%|▎         | 2/57 [00:00<00:19,  2.84it/s]Val:   5%|▌         | 3/57 [00:01<00:27,  1.94it/s]Val:   7%|▋         | 4/57 [00:02<00:29,  1.81it/s]Val:   9%|▉         | 5/57 [00:02<00:32,  1.58it/s]Val:  11%|█         | 6/57 [00:03<00:31,  1.60it/s]Val:  12%|█▏        | 7/57 [00:04<00:33,  1.49it/s]Val:  14%|█▍        | 8/57 [00:04<00:29,  1.66it/s]Val:  16%|█▌        | 9/57 [00:05<00:29,  1.62it/s]Val:  18%|█▊        | 10/57 [00:05<00:29,  1.60it/s]Val:  19%|█▉        | 11/57 [00:06<00:28,  1.59it/s]Val:  21%|██        | 12/57 [00:07<00:30,  1.48it/s]Val:  23%|██▎       | 13/57 [00:08<00:31,  1.42it/s]Val:  25%|██▍       | 14/57 [00:08<00:30,  1.39it/s]Val:  26%|██▋       | 15/57 [00:09<00:31,  1.34it/s]Val:  28%|██▊       | 16/57 [00:10<00:28,  1.44it/s]Val:  30%|██▉       | 17/57 [00:10<00:26,  1.53it/s]Val:  32%|███▏      | 18/57 [00:11<00:26,  1.48it/s]Val:  33%|███▎      | 19/57 [00:12<00:24,  1.56it/s]Val:  35%|███▌      | 20/57 [00:12<00:22,  1.64it/s]Val:  37%|███▋      | 21/57 [00:13<00:22,  1.62it/s]Val:  39%|███▊      | 22/57 [00:13<00:21,  1.66it/s]Val:  40%|████      | 23/57 [00:14<00:19,  1.76it/s]Val:  42%|████▏     | 24/57 [00:15<00:19,  1.68it/s]Val:  44%|████▍     | 25/57 [00:15<00:19,  1.65it/s]Val:  46%|████▌     | 26/57 [00:16<00:17,  1.78it/s]Val:  47%|████▋     | 27/57 [00:16<00:19,  1.53it/s]Val:  49%|████▉     | 28/57 [00:17<00:18,  1.58it/s]Val:  51%|█████     | 29/57 [00:18<00:17,  1.59it/s]Val:  53%|█████▎    | 30/57 [00:18<00:16,  1.65it/s]Val:  54%|█████▍    | 31/57 [00:19<00:16,  1.56it/s]Val:  56%|█████▌    | 32/57 [00:20<00:16,  1.47it/s]Val:  58%|█████▊    | 33/57 [00:20<00:14,  1.61it/s]Val:  60%|█████▉    | 34/57 [00:21<00:15,  1.50it/s]Val:  61%|██████▏   | 35/57 [00:22<00:15,  1.41it/s]Val:  63%|██████▎   | 36/57 [00:23<00:15,  1.33it/s]Val:  65%|██████▍   | 37/57 [00:23<00:14,  1.35it/s]Val:  67%|██████▋   | 38/57 [00:24<00:12,  1.50it/s]Val:  68%|██████▊   | 39/57 [00:24<00:11,  1.58it/s]Val:  70%|███████   | 40/57 [00:25<00:11,  1.53it/s]Val:  72%|███████▏  | 41/57 [00:26<00:11,  1.45it/s]Val:  74%|███████▎  | 42/57 [00:26<00:09,  1.55it/s]Val:  75%|███████▌  | 43/57 [00:27<00:09,  1.50it/s]Val:  77%|███████▋  | 44/57 [00:28<00:08,  1.56it/s]Val:  79%|███████▉  | 45/57 [00:28<00:07,  1.62it/s]Val:  81%|████████  | 46/57 [00:29<00:06,  1.65it/s]Val:  82%|████████▏ | 47/57 [00:30<00:06,  1.57it/s]Val:  84%|████████▍ | 48/57 [00:30<00:05,  1.61it/s]Val:  86%|████████▌ | 49/57 [00:31<00:04,  1.74it/s]Val:  88%|████████▊ | 50/57 [00:31<00:04,  1.74it/s]Val:  89%|████████▉ | 51/57 [00:32<00:03,  1.62it/s]Val:  91%|█████████ | 52/57 [00:32<00:02,  1.76it/s]Val:  93%|█████████▎| 53/57 [00:33<00:02,  1.55it/s]Val:  95%|█████████▍| 54/57 [00:34<00:02,  1.46it/s]Val:  96%|█████████▋| 55/57 [00:35<00:01,  1.42it/s]Val:  98%|█████████▊| 56/57 [00:35<00:00,  1.49it/s]Val: 100%|██████████| 57/57 [00:36<00:00,  1.87it/s]                                                                                                           Val: 100%|██████████| 57/57 [00:36<00:00,  1.87it/s]Train:  38%|███▊      | 50/132 [29:55<49:16, 36.06s/it]Train:  38%|███▊      | 50/132 [29:55<49:16, 36.06s/it]Val: 100%|██████████| 57/57 [00:36<00:00,  1.58it/s]
+[INFO:swift] Saving model checkpoint to /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/checkpoint-50
+Train:  39%|███▊      | 51/132 [30:31<1:03:24, 46.97s/it]Train:  39%|███▉      | 52/132 [31:07<58:22, 43.78s/it]  Train:  40%|████      | 53/132 [31:55<59:15, 45.00s/it]Train:  41%|████      | 54/132 [32:30<54:41, 42.07s/it]Train:  42%|████▏     | 55/132 [33:06<51:36, 40.22s/it]                                                       Train:  42%|████▏     | 55/132 [33:06<51:36, 40.22s/it]Train:  42%|████▏     | 55/132 [33:06<51:36, 40.22s/it]Train:  42%|████▏     | 56/132 [33:41<48:56, 38.64s/it]Train:  43%|████▎     | 57/132 [34:18<47:33, 38.05s/it]Train:  44%|████▍     | 58/132 [34:53<46:04, 37.36s/it]Train:  45%|████▍     | 59/132 [35:30<45:12, 37.16s/it]Train:  45%|████▌     | 60/132 [36:05<43:51, 36.56s/it]                                                       Train:  45%|████▌     | 60/132 [36:05<43:51, 36.56s/it]Train:  45%|████▌     | 60/132 [36:05<43:51, 36.56s/it]Train:  46%|████▌     | 61/132 [36:40<42:26, 35.87s/it]Train:  47%|████▋     | 62/132 [37:15<41:46, 35.81s/it]Train:  48%|████▊     | 63/132 [37:55<42:23, 36.87s/it]Train:  48%|████▊     | 64/132 [38:30<41:11, 36.35s/it]Train:  49%|████▉     | 65/132 [39:04<39:52, 35.72s/it]                                                       Train:  49%|████▉     | 65/132 [39:04<39:52, 35.72s/it]Train:  49%|████▉     | 65/132 [39:04<39:52, 35.72s/it]Train:  50%|█████     | 66/132 [39:38<38:37, 35.12s/it]{'eval_loss': 0.07478908, 'eval_runtime': 37.066, 'eval_samples_per_second': 24.281, 'eval_steps_per_second': 1.538, 'eval_token_acc': 0.9717633, 'epoch': 0.75, 'global_step/max_steps': '50/132', 'percentage': '37.88%', 'elapsed_time': '29m 55s', 'remaining_time': '49m 5s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027842}
+{'loss': 0.07108535, 'grad_norm': 0.26442668, 'learning_rate': 6.782e-05, 'token_acc': 0.97267958, 'epoch': 0.82, 'global_step/max_steps': '55/132', 'percentage': '41.67%', 'elapsed_time': '33m 6s', 'remaining_time': '46m 21s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027686}
+{'loss': 0.06618682, 'grad_norm': 0.27106667, 'learning_rate': 6.182e-05, 'token_acc': 0.97461811, 'epoch': 0.9, 'global_step/max_steps': '60/132', 'percentage': '45.45%', 'elapsed_time': '36m 5s', 'remaining_time': '43m 18s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027704}
+{'loss': 0.05613923, 'grad_norm': 0.29618981, 'learning_rate': 5.564e-05, 'token_acc': 0.97835479, 'epoch': 0.97, 'global_step/max_steps': '65/132', 'percentage': '49.24%', 'elapsed_time': '39m 4s', 'remaining_time': '40m 16s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027726}
+Train:  51%|█████     | 67/132 [40:30<43:41, 40.34s/it]Train:  52%|█████▏    | 68/132 [41:05<41:09, 38.59s/it]Train:  52%|█████▏    | 69/132 [41:41<39:56, 38.04s/it]Train:  53%|█████▎    | 70/132 [42:19<39:17, 38.02s/it]                                                       Train:  53%|█████▎    | 70/132 [42:19<39:17, 38.02s/it]Train:  53%|█████▎    | 70/132 [42:19<39:17, 38.02s/it]Train:  54%|█████▍    | 71/132 [42:56<38:06, 37.49s/it]Train:  55%|█████▍    | 72/132 [43:30<36:25, 36.42s/it]Train:  55%|█████▌    | 73/132 [44:05<35:32, 36.14s/it]Train:  56%|█████▌    | 74/132 [44:40<34:39, 35.85s/it]Train:  57%|█████▋    | 75/132 [45:16<34:03, 35.85s/it]                                                       Train:  57%|█████▋    | 75/132 [45:16<34:03, 35.85s/it]Train:  57%|█████▋    | 75/132 [45:16<34:03, 35.85s/it]Train:  58%|█████▊    | 76/132 [46:01<36:02, 38.61s/it]Train:  58%|█████▊    | 77/132 [46:34<33:50, 36.92s/it]Train:  59%|█████▉    | 78/132 [47:08<32:23, 35.99s/it]Train:  60%|█████▉    | 79/132 [47:43<31:30, 35.67s/it]Train:  61%|██████    | 80/132 [48:17<30:36, 35.32s/it]                                                       Train:  61%|██████    | 80/132 [48:17<30:36, 35.32s/it]Train:  61%|██████    | 80/132 [48:17<30:36, 35.32s/it]Train:  61%|██████▏   | 81/132 [48:52<29:48, 35.07s/it]Train:  62%|██████▏   | 82/132 [49:27<29:09, 35.00s/it]Train:  63%|██████▎   | 83/132 [50:01<28:28, 34.87s/it]Train:  64%|██████▎   | 84/132 [50:37<28:02, 35.05s/it]Train:  64%|██████▍   | 85/132 [51:13<27:48, 35.51s/it]                                                       Train:  64%|██████▍   | 85/132 [51:13<27:48, 35.51s/it]Train:  64%|██████▍   | 85/132 [51:13<27:48, 35.51s/it]Train:  65%|██████▌   | 86/132 [51:45<26:26, 34.48s/it]Train:  66%|██████▌   | 87/132 [52:19<25:39, 34.22s/it]Train:  67%|██████▋   | 88/132 [52:52<24:56, 34.01s/it]Train:  67%|██████▋   | 89/132 [53:31<25:15, 35.24s/it]Train:  68%|██████▊   | 90/132 [54:09<25:24, 36.30s/it]                                                       Train:  68%|██████▊   | 90/132 [54:09<25:24, 36.30s/it]Train:  68%|██████▊   | 90/132 [54:09<25:24, 36.30s/it]Train:  69%|██████▉   | 91/132 [54:46<24:54, 36.45s/it]Train:  70%|██████▉   | 92/132 [55:22<24:15, 36.39s/it]Train:  70%|███████   | 93/132 [55:59<23:40, 36.43s/it]Train:  71%|███████   | 94/132 [56:35<23:02, 36.37s/it]Train:  72%|███████▏  | 95/132 [57:07<21:36, 35.03s/it]                                                       Train:  72%|███████▏  | 95/132 [57:07<21:36, 35.03s/it]Train:  72%|███████▏  | 95/132 [57:07<21:36, 35.03s/it]Train:  73%|███████▎  | 96/132 [57:44<21:23, 35.67s/it]Train:  73%|███████▎  | 97/132 [58:19<20:38, 35.40s/it]Train:  74%|███████▍  | 98/132 [58:54<19:58, 35.24s/it]Train:  75%|███████▌  | 99/132 [59:30<19:27, 35.37s/it]Train:  76%|███████▌  | 100/132 [1:00:06<18:58, 35.59s/it]                                                          Train:  76%|███████▌  | 100/132 [1:00:06<18:58, 35.59s/it]Train:  76%|███████▌  | 100/132 [1:00:06<18:58, 35.59s/it]{'loss': 0.05763316, 'grad_norm': 0.34778717, 'learning_rate': 4.937e-05, 'token_acc': 0.98229233, 'epoch': 1.06, 'global_step/max_steps': '70/132', 'percentage': '53.03%', 'elapsed_time': '42m 19s', 'remaining_time': '37m 29s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.02756}
+{'loss': 0.04050468, 'grad_norm': 0.31107172, 'learning_rate': 4.311e-05, 'token_acc': 0.98529993, 'epoch': 1.13, 'global_step/max_steps': '75/132', 'percentage': '56.82%', 'elapsed_time': '45m 16s', 'remaining_time': '34m 24s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027609}
+{'loss': 0.03467409, 'grad_norm': 0.30133137, 'learning_rate': 3.696e-05, 'token_acc': 0.98767512, 'epoch': 1.21, 'global_step/max_steps': '80/132', 'percentage': '60.61%', 'elapsed_time': '48m 17s', 'remaining_time': '31m 23s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027607}
+{'loss': 0.02815455, 'grad_norm': 0.34538481, 'learning_rate': 3.101e-05, 'token_acc': 0.98967975, 'epoch': 1.28, 'global_step/max_steps': '85/132', 'percentage': '64.39%', 'elapsed_time': '51m 13s', 'remaining_time': '28m 19s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027653}
+{'loss': 0.02598156, 'grad_norm': 0.26644871, 'learning_rate': 2.536e-05, 'token_acc': 0.99067459, 'epoch': 1.36, 'global_step/max_steps': '90/132', 'percentage': '68.18%', 'elapsed_time': '54m 9s', 'remaining_time': '25m 16s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027693}
+{'loss': 0.02369407, 'grad_norm': 0.25842285, 'learning_rate': 2.01e-05, 'token_acc': 0.99164057, 'epoch': 1.43, 'global_step/max_steps': '95/132', 'percentage': '71.97%', 'elapsed_time': '57m 7s', 'remaining_time': '22m 14s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027716}
+{'loss': 0.02152187, 'grad_norm': 0.29712179, 'learning_rate': 1.532e-05, 'token_acc': 0.99221223, 'epoch': 1.51, 'global_step/max_steps': '100/132', 'percentage': '75.76%', 'elapsed_time': '1h 0m 6s', 'remaining_time': '19m 13s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.02773}
+
+Val:   0%|          | 0/57 [00:00<?, ?it/s]Val:   4%|▎         | 2/57 [00:00<00:19,  2.83it/s]Val:   5%|▌         | 3/57 [00:01<00:27,  1.93it/s]Val:   7%|▋         | 4/57 [00:02<00:29,  1.78it/s]Val:   9%|▉         | 5/57 [00:02<00:33,  1.57it/s]Val:  11%|█         | 6/57 [00:03<00:32,  1.59it/s]Val:  12%|█▏        | 7/57 [00:04<00:33,  1.47it/s]Val:  14%|█▍        | 8/57 [00:04<00:29,  1.65it/s]Val:  16%|█▌        | 9/57 [00:05<00:29,  1.62it/s]Val:  18%|█▊        | 10/57 [00:06<00:29,  1.59it/s]Val:  19%|█▉        | 11/57 [00:06<00:29,  1.58it/s]Val:  21%|██        | 12/57 [00:07<00:30,  1.47it/s]Val:  23%|██▎       | 13/57 [00:08<00:31,  1.39it/s]Val:  25%|██▍       | 14/57 [00:08<00:31,  1.38it/s]Val:  26%|██▋       | 15/57 [00:09<00:31,  1.33it/s]Val:  28%|██▊       | 16/57 [00:10<00:28,  1.43it/s]Val:  30%|██▉       | 17/57 [00:10<00:26,  1.52it/s]Val:  32%|███▏      | 18/57 [00:11<00:26,  1.48it/s]Val:  33%|███▎      | 19/57 [00:12<00:24,  1.56it/s]Val:  35%|███▌      | 20/57 [00:12<00:22,  1.64it/s]Val:  37%|███▋      | 21/57 [00:13<00:22,  1.63it/s]Val:  39%|███▊      | 22/57 [00:13<00:20,  1.67it/s]Val:  40%|████      | 23/57 [00:14<00:19,  1.76it/s]Val:  42%|████▏     | 24/57 [00:15<00:19,  1.69it/s]Val:  44%|████▍     | 25/57 [00:15<00:19,  1.65it/s]Val:  46%|████▌     | 26/57 [00:16<00:17,  1.78it/s]Val:  47%|████▋     | 27/57 [00:17<00:19,  1.53it/s]Val:  49%|████▉     | 28/57 [00:17<00:18,  1.58it/s]Val:  51%|█████     | 29/57 [00:18<00:17,  1.59it/s]Val:  53%|█████▎    | 30/57 [00:18<00:16,  1.65it/s]Val:  54%|█████▍    | 31/57 [00:19<00:16,  1.57it/s]Val:  56%|█████▌    | 32/57 [00:20<00:16,  1.48it/s]Val:  58%|█████▊    | 33/57 [00:20<00:14,  1.61it/s]Val:  60%|█████▉    | 34/57 [00:21<00:15,  1.50it/s]Val:  61%|██████▏   | 35/57 [00:22<00:15,  1.42it/s]Val:  63%|██████▎   | 36/57 [00:23<00:15,  1.33it/s]Val:  65%|██████▍   | 37/57 [00:23<00:14,  1.35it/s]Val:  67%|██████▋   | 38/57 [00:24<00:12,  1.51it/s]Val:  68%|██████▊   | 39/57 [00:24<00:11,  1.59it/s]Val:  70%|███████   | 40/57 [00:25<00:11,  1.54it/s]Val:  72%|███████▏  | 41/57 [00:26<00:10,  1.46it/s]Val:  74%|███████▎  | 42/57 [00:26<00:09,  1.55it/s]Val:  75%|███████▌  | 43/57 [00:27<00:09,  1.50it/s]Val:  77%|███████▋  | 44/57 [00:28<00:08,  1.57it/s]Val:  79%|███████▉  | 45/57 [00:28<00:07,  1.63it/s]Val:  81%|████████  | 46/57 [00:29<00:06,  1.65it/s]Val:  82%|████████▏ | 47/57 [00:30<00:06,  1.57it/s]Val:  84%|████████▍ | 48/57 [00:30<00:05,  1.61it/s]Val:  86%|████████▌ | 49/57 [00:31<00:04,  1.75it/s]Val:  88%|████████▊ | 50/57 [00:31<00:04,  1.74it/s]Val:  89%|████████▉ | 51/57 [00:32<00:03,  1.63it/s]Val:  91%|█████████ | 52/57 [00:32<00:02,  1.77it/s]Val:  93%|█████████▎| 53/57 [00:33<00:02,  1.56it/s]Val:  95%|█████████▍| 54/57 [00:34<00:02,  1.47it/s]Val:  96%|█████████▋| 55/57 [00:35<00:01,  1.42it/s]Val:  98%|█████████▊| 56/57 [00:35<00:00,  1.50it/s]Val: 100%|██████████| 57/57 [00:36<00:00,  1.86it/s]                                                                                                              Val: 100%|██████████| 57/57 [00:36<00:00,  1.86it/s]Train:  76%|███████▌  | 100/132 [1:00:43<18:58, 35.59s/it]Train:  76%|███████▌  | 100/132 [1:00:43<18:58, 35.59s/it]Val: 100%|██████████| 57/57 [00:36<00:00,  1.58it/s]
+[INFO:swift] Saving model checkpoint to /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/checkpoint-100
+Train:  77%|███████▋  | 101/132 [1:01:18<24:01, 46.49s/it]Train:  77%|███████▋  | 102/132 [1:01:53<21:33, 43.11s/it]Train:  78%|███████▊  | 103/132 [1:02:27<19:32, 40.43s/it]Train:  79%|███████▉  | 104/132 [1:03:00<17:50, 38.23s/it]Train:  80%|███████▉  | 105/132 [1:03:35<16:47, 37.31s/it]                                                          Train:  80%|███████▉  | 105/132 [1:03:35<16:47, 37.31s/it]Train:  80%|███████▉  | 105/132 [1:03:35<16:47, 37.31s/it]Train:  80%|████████  | 106/132 [1:04:12<16:04, 37.10s/it]Train:  81%|████████  | 107/132 [1:04:46<15:05, 36.23s/it]Train:  82%|████████▏ | 108/132 [1:05:21<14:22, 35.93s/it]Train:  83%|████████▎ | 109/132 [1:05:57<13:44, 35.83s/it]Train:  83%|████████▎ | 110/132 [1:06:31<12:56, 35.29s/it]                                                          Train:  83%|████████▎ | 110/132 [1:06:31<12:56, 35.29s/it]Train:  83%|████████▎ | 110/132 [1:06:31<12:56, 35.29s/it]Train:  84%|████████▍ | 111/132 [1:07:07<12:24, 35.43s/it]Train:  85%|████████▍ | 112/132 [1:07:40<11:35, 34.77s/it]Train:  86%|████████▌ | 113/132 [1:08:16<11:10, 35.29s/it]Train:  86%|████████▋ | 114/132 [1:08:51<10:31, 35.07s/it]Train:  87%|████████▋ | 115/132 [1:09:27<09:58, 35.22s/it]                                                          Train:  87%|████████▋ | 115/132 [1:09:27<09:58, 35.22s/it]Train:  87%|████████▋ | 115/132 [1:09:27<09:58, 35.22s/it]Train:  88%|████████▊ | 116/132 [1:10:02<09:24, 35.29s/it]Train:  89%|████████▊ | 117/132 [1:10:39<08:55, 35.67s/it]Train:  89%|████████▉ | 118/132 [1:11:14<08:18, 35.58s/it]Train:  90%|█████████ | 119/132 [1:11:51<07:48, 36.07s/it]Train:  91%|█████████ | 120/132 [1:12:27<07:11, 35.94s/it]                                                          Train:  91%|█████████ | 120/132 [1:12:27<07:11, 35.94s/it]Train:  91%|█████████ | 120/132 [1:12:27<07:11, 35.94s/it]Train:  92%|█████████▏| 121/132 [1:13:01<06:29, 35.44s/it]Train:  92%|█████████▏| 122/132 [1:13:33<05:42, 34.27s/it]Train:  93%|█████████▎| 123/132 [1:14:11<05:19, 35.46s/it]Train:  94%|█████████▍| 124/132 [1:14:46<04:42, 35.33s/it]Train:  95%|█████████▍| 125/132 [1:15:20<04:05, 35.10s/it]                                                          Train:  95%|█████████▍| 125/132 [1:15:20<04:05, 35.10s/it]Train:  95%|█████████▍| 125/132 [1:15:20<04:05, 35.10s/it]Train:  95%|█████████▌| 126/132 [1:15:57<03:33, 35.59s/it]Train:  96%|█████████▌| 127/132 [1:16:31<02:55, 35.12s/it]Train:  97%|█████████▋| 128/132 [1:17:06<02:20, 35.16s/it]Train:  98%|█████████▊| 129/132 [1:17:41<01:45, 35.07s/it]Train:  98%|█████████▊| 130/132 [1:18:15<01:09, 34.67s/it]                                                          Train:  98%|█████████▊| 130/132 [1:18:15<01:09, 34.67s/it]Train:  98%|█████████▊| 130/132 [1:18:15<01:09, 34.67s/it]Train:  99%|█████████▉| 131/132 [1:18:50<00:34, 34.68s/it]Train: 100%|██████████| 132/132 [1:19:22<00:00, 34.01s/it]{'eval_loss': 0.0211108, 'eval_runtime': 37.1439, 'eval_samples_per_second': 24.23, 'eval_steps_per_second': 1.535, 'eval_token_acc': 0.9928016, 'epoch': 1.51, 'global_step/max_steps': '100/132', 'percentage': '75.76%', 'elapsed_time': '1h 0m 43s', 'remaining_time': '19m 25s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027448}
+{'loss': 0.0206591, 'grad_norm': 0.25014693, 'learning_rate': 1.108e-05, 'token_acc': 0.99301979, 'epoch': 1.58, 'global_step/max_steps': '105/132', 'percentage': '79.55%', 'elapsed_time': '1h 3m 35s', 'remaining_time': '16m 21s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027517}
+{'loss': 0.02046296, 'grad_norm': 0.27869433, 'learning_rate': 7.45e-06, 'token_acc': 0.99284442, 'epoch': 1.66, 'global_step/max_steps': '110/132', 'percentage': '83.33%', 'elapsed_time': '1h 6m 31s', 'remaining_time': '13m 18s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027559}
+{'loss': 0.01980408, 'grad_norm': 0.21896362, 'learning_rate': 4.49e-06, 'token_acc': 0.99294461, 'epoch': 1.73, 'global_step/max_steps': '115/132', 'percentage': '87.12%', 'elapsed_time': '1h 9m 27s', 'remaining_time': '10m 15s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027598}
+{'loss': 0.02026559, 'grad_norm': 0.24529792, 'learning_rate': 2.26e-06, 'token_acc': 0.99255896, 'epoch': 1.81, 'global_step/max_steps': '120/132', 'percentage': '90.91%', 'elapsed_time': '1h 12m 27s', 'remaining_time': '7m 14s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027604}
+{'loss': 0.01806498, 'grad_norm': 0.22134325, 'learning_rate': 7.7e-07, 'token_acc': 0.99349039, 'epoch': 1.88, 'global_step/max_steps': '125/132', 'percentage': '94.70%', 'elapsed_time': '1h 15m 20s', 'remaining_time': '4m 13s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027649}
+{'loss': 0.01771939, 'grad_norm': 0.18492524, 'learning_rate': 6e-08, 'token_acc': 0.99370489, 'epoch': 1.96, 'global_step/max_steps': '130/132', 'percentage': '98.48%', 'elapsed_time': '1h 18m 15s', 'remaining_time': '1m 12s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027686}
+
+Val:   0%|          | 0/57 [00:00<?, ?it/s]Val:   4%|▎         | 2/57 [00:00<00:19,  2.83it/s]Val:   5%|▌         | 3/57 [00:01<00:27,  1.93it/s]Val:   7%|▋         | 4/57 [00:02<00:29,  1.81it/s]Val:   9%|▉         | 5/57 [00:02<00:32,  1.58it/s]Val:  11%|█         | 6/57 [00:03<00:31,  1.59it/s]Val:  12%|█▏        | 7/57 [00:04<00:33,  1.49it/s]Val:  14%|█▍        | 8/57 [00:04<00:29,  1.66it/s]Val:  16%|█▌        | 9/57 [00:05<00:29,  1.62it/s]Val:  18%|█▊        | 10/57 [00:05<00:29,  1.59it/s]Val:  19%|█▉        | 11/57 [00:06<00:28,  1.59it/s]Val:  21%|██        | 12/57 [00:07<00:30,  1.48it/s]Val:  23%|██▎       | 13/57 [00:08<00:31,  1.42it/s]Val:  25%|██▍       | 14/57 [00:08<00:30,  1.39it/s]Val:  26%|██▋       | 15/57 [00:09<00:31,  1.34it/s]Val:  28%|██▊       | 16/57 [00:10<00:28,  1.44it/s]Val:  30%|██▉       | 17/57 [00:10<00:26,  1.53it/s]Val:  32%|███▏      | 18/57 [00:11<00:26,  1.48it/s]Val:  33%|███▎      | 19/57 [00:12<00:24,  1.57it/s]Val:  35%|███▌      | 20/57 [00:12<00:22,  1.64it/s]Val:  37%|███▋      | 21/57 [00:13<00:22,  1.63it/s]Val:  39%|███▊      | 22/57 [00:13<00:21,  1.66it/s]Val:  40%|████      | 23/57 [00:14<00:19,  1.76it/s]Val:  42%|████▏     | 24/57 [00:15<00:19,  1.69it/s]Val:  44%|████▍     | 25/57 [00:15<00:19,  1.66it/s]Val:  46%|████▌     | 26/57 [00:16<00:17,  1.78it/s]Val:  47%|████▋     | 27/57 [00:16<00:19,  1.53it/s]Val:  49%|████▉     | 28/57 [00:17<00:18,  1.58it/s]Val:  51%|█████     | 29/57 [00:18<00:17,  1.59it/s]Val:  53%|█████▎    | 30/57 [00:18<00:16,  1.65it/s]Val:  54%|█████▍    | 31/57 [00:19<00:16,  1.57it/s]Val:  56%|█████▌    | 32/57 [00:20<00:16,  1.47it/s]Val:  58%|█████▊    | 33/57 [00:20<00:14,  1.61it/s]Val:  60%|█████▉    | 34/57 [00:21<00:15,  1.50it/s]Val:  61%|██████▏   | 35/57 [00:22<00:15,  1.42it/s]Val:  63%|██████▎   | 36/57 [00:23<00:15,  1.33it/s]Val:  65%|██████▍   | 37/57 [00:23<00:14,  1.35it/s]Val:  67%|██████▋   | 38/57 [00:24<00:12,  1.50it/s]Val:  68%|██████▊   | 39/57 [00:24<00:11,  1.59it/s]Val:  70%|███████   | 40/57 [00:25<00:11,  1.53it/s]Val:  72%|███████▏  | 41/57 [00:26<00:10,  1.46it/s]Val:  74%|███████▎  | 42/57 [00:26<00:09,  1.55it/s]Val:  75%|███████▌  | 43/57 [00:27<00:09,  1.50it/s]Val:  77%|███████▋  | 44/57 [00:28<00:08,  1.57it/s]Val:  79%|███████▉  | 45/57 [00:28<00:07,  1.62it/s]Val:  81%|████████  | 46/57 [00:29<00:06,  1.65it/s]Val:  82%|████████▏ | 47/57 [00:30<00:06,  1.57it/s]Val:  84%|████████▍ | 48/57 [00:30<00:05,  1.61it/s]Val:  86%|████████▌ | 49/57 [00:31<00:04,  1.74it/s]Val:  88%|████████▊ | 50/57 [00:31<00:04,  1.74it/s]Val:  89%|████████▉ | 51/57 [00:32<00:03,  1.63it/s]Val:  91%|█████████ | 52/57 [00:32<00:02,  1.76it/s]Val:  93%|█████████▎| 53/57 [00:33<00:02,  1.55it/s]Val:  95%|█████████▍| 54/57 [00:34<00:02,  1.47it/s]Val:  96%|█████████▋| 55/57 [00:35<00:01,  1.42it/s]Val:  98%|█████████▊| 56/57 [00:35<00:00,  1.50it/s]Val: 100%|██████████| 57/57 [00:36<00:00,  1.84it/s]                                                                                                              Train: 100%|██████████| 132/132 [1:19:59<00:00, 34.01s/it]Val: 100%|██████████| 57/57 [00:36<00:00,  1.84it/s]Train: 100%|██████████| 132/132 [1:19:59<00:00, 34.01s/it]Val: 100%|██████████| 57/57 [00:36<00:00,  1.58it/s]
+[INFO:swift] Saving model checkpoint to /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/checkpoint-132
+                                                          Train: 100%|██████████| 132/132 [1:20:00<00:00, 34.01s/it]Train: 100%|██████████| 132/132 [1:20:00<00:00, 34.01s/it]Train: 100%|██████████| 132/132 [1:20:00<00:00, 36.37s/it]
+[INFO:swift] last_model_checkpoint: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/checkpoint-132
+[INFO:swift] best_model_checkpoint: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/checkpoint-132
+[INFO:swift] images_dir: /mlx_devbox/users/wuchuncheng/playground/security_intent/output/v1/v2-20260312-002920/images
+[INFO:swift] End time of running main: 2026-03-12 01:50:00.957251
+{'eval_loss': 0.01884554, 'eval_runtime': 37.0297, 'eval_samples_per_second': 24.305, 'eval_steps_per_second': 1.539, 'eval_token_acc': 0.99362663, 'epoch': 1.99, 'global_step/max_steps': '132/132', 'percentage': '100.00%', 'elapsed_time': '1h 19m 59s', 'remaining_time': '0s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027502}
+{'train_runtime': 4800.5732, 'train_samples_per_second': 7.123, 'train_steps_per_second': 0.027, 'train_loss': 0.17737065, 'epoch': 1.99, 'global_step/max_steps': '132/132', 'percentage': '100.00%', 'elapsed_time': '1h 20m 0s', 'remaining_time': '0s', 'memory(GiB)': 76.78, 'train_speed(iter/s)': 0.027497}

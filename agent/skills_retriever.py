@@ -19,28 +19,7 @@ from pathlib import Path
 from typing import Optional
 
 from .chinese_trigger_map import get_candidate_subdomains
-
-# 子领域别名 → 规范名（与 GitHub validate-skill.py 保持一致）
-_SUBDOMAIN_ALIASES = {
-    "identity-and-access-management": "identity-access-management",
-    "identity-security": "identity-access-management",
-    "zero-trust": "zero-trust-architecture",
-    "ot-security": "ot-ics-security",
-    "security-operations": "soc-operations",
-    "red-team": "red-teaming",
-    "application-security": "web-application-security",
-    "offensive-security": "penetration-testing",
-    "social-engineering-defense": "phishing-defense",
-    "governance-risk-compliance": "compliance-governance",
-    "firmware-security": "firmware-analysis",
-}
-
-
-def normalize_subdomain(raw: str) -> str:
-    """将子领域别名转为规范名"""
-    if not raw:
-        return ""
-    return _SUBDOMAIN_ALIASES.get(raw, raw)
+from intent_recognition import normalize_subdomain
 
 
 class SkillInfo:
