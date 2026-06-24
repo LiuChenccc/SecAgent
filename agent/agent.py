@@ -23,6 +23,10 @@ from .executor import Executor
 from .intent import IntentRecognizer
 
 
+DEFAULT_EXECUTOR_API_BASE = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+DEFAULT_EXECUTOR_MODEL = "qwen3.6-plus-2026-04-02"
+
+
 class SecurityAgent:
     """网络安全智能体 —— 主编排器"""
 
@@ -33,9 +37,15 @@ class SecurityAgent:
         memory_path: str = "",
         intent_backend: str = "api",
         intent_adapter_dir: Optional[str] = None,
-        api_base: str = os.environ.get("DASHSCOPE_API_BASE", "https://dashscope.aliyuncs.com/compatible-mode/v1"),
-        api_key: str = os.environ.get("DASHSCOPE_API_KEY", "not-needed"),
-        api_model: str = os.environ.get("DASHSCOPE_MODEL", "qwen3.6-plus-2026-04-02"),
+        intent_api_base: Optional[str] = None,
+        intent_api_key: Optional[str] = None,
+        intent_model: Optional[str] = None,
+        executor_api_base: Optional[str] = None,
+        executor_api_key: Optional[str] = None,
+        executor_model: Optional[str] = None,
+        api_base: Optional[str] = None,
+        api_key: Optional[str] = None,
+        api_model: Optional[str] = None,
     ):
         """
         初始化智能体。
@@ -46,9 +56,13 @@ class SecurityAgent:
             memory_path: 记忆存储文件路径
             intent_backend: 意图识别后端 "api" | "local"
             intent_adapter_dir: LoRA adapter目录（local模式需提供）
-            api_base: LLM API地址
-            api_key: API密钥
-            api_model: 模型名称
+            intent_api_base: 意图识别 LLM API地址（默认走 INTENT_API_BASE）
+            intent_api_key: 意图识别 API密钥（默认走 INTENT_API_KEY）
+            intent_model: 意图识别模型名称（默认走 INTENT_MODEL）
+            executor_api_base: 执行引擎 LLM API地址（默认走 DASHSCOPE_API_BASE）
+            executor_api_key: 执行引擎 API密钥（默认走 DASHSCOPE_API_KEY）
+            executor_model: 执行引擎模型名称（默认走 DASHSCOPE_MODEL）
+            api_base/api_key/api_model: 兼容旧入口；未指定新参数时同时作为两套配置
         """
         if skills_dir is None:
             skills_dir = os.path.join(
@@ -60,9 +74,38 @@ class SecurityAgent:
         agent_dir = os.path.dirname(os.path.abspath(__file__))
         default_memory = os.path.join(agent_dir, "memory_store", "execution_memory.jsonl")
         self.memory_path = memory_path or default_memory
-        self.api_base = api_base
-        self.api_key = api_key
-        self.api_model = api_model
+
+        # 兼容旧入口：api_base/api_key/api_model 未被新参数覆盖时，可同时作为两套配置。
+        self.intent_api_base = intent_api_base if intent_api_base is not None else api_base
+        self.intent_api_key = intent_api_key if intent_api_key is not None else api_key
+        self.intent_model = intent_model if intent_model is not None else api_model
+
+        self.executor_api_base = (
+            executor_api_base
+            if executor_api_base is not None
+            else api_base
+            if api_base is not None
+            else os.environ.get("DASHSCOPE_API_BASE", DEFAULT_EXECUTOR_API_BASE)
+        )
+        self.executor_api_key = (
+            executor_api_key
+            if executor_api_key is not None
+            else api_key
+            if api_key is not None
+            else os.environ.get("DASHSCOPE_API_KEY", "not-needed")
+        )
+        self.executor_model = (
+            executor_model
+            if executor_model is not None
+            else api_model
+            if api_model is not None
+            else os.environ.get("DASHSCOPE_MODEL", DEFAULT_EXECUTOR_MODEL)
+        )
+
+        # 旧字段保留为执行引擎配置，兼容已有调用方读取。
+        self.api_base = self.executor_api_base
+        self.api_key = self.executor_api_key
+        self.api_model = self.executor_model
 
         print("初始化 SecurityAgent...")
 
@@ -87,17 +130,17 @@ class SecurityAgent:
         self.intent_recognizer = IntentRecognizer(
             backend=intent_backend,
             adapter_dir=intent_adapter_dir,
-            api_base=api_base,
-            api_key=api_key,
-            api_model=api_model,
+            api_base=self.intent_api_base,
+            api_key=self.intent_api_key,
+            api_model=self.intent_model,
         )
         print(f"    意图识别后端: {intent_backend}")
 
         print("  初始化执行引擎...")
         self.executor = Executor(
-            api_base=api_base,
-            api_key=api_key,
-            api_model=api_model,
+            api_base=self.executor_api_base,
+            api_key=self.executor_api_key,
+            api_model=self.executor_model,
         )
 
         print("SecurityAgent 初始化完成。")

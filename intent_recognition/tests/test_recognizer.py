@@ -67,3 +67,32 @@ def test_build_enhanced_prompt():
     assert "JSON" in prompt
     assert "候选Skills" in prompt
     assert "案例1" in prompt
+
+
+def test_intent_recognizer_reads_intent_env(monkeypatch):
+    monkeypatch.setenv("INTENT_API_BASE", "https://intent-env.example/v1")
+    monkeypatch.setenv("INTENT_API_KEY", "intent-env-key")
+    monkeypatch.setenv("INTENT_MODEL", "intent-env-model")
+
+    r = IntentRecognizer(backend="api")
+
+    assert r.api_base == "https://intent-env.example/v1"
+    assert r.api_key == "intent-env-key"
+    assert r.api_model == "intent-env-model"
+
+
+def test_intent_recognizer_explicit_args_override_env(monkeypatch):
+    monkeypatch.setenv("INTENT_API_BASE", "https://intent-env.example/v1")
+    monkeypatch.setenv("INTENT_API_KEY", "intent-env-key")
+    monkeypatch.setenv("INTENT_MODEL", "intent-env-model")
+
+    r = IntentRecognizer(
+        backend="api",
+        api_base="https://explicit.example/v1",
+        api_key="explicit-key",
+        api_model="explicit-model",
+    )
+
+    assert r.api_base == "https://explicit.example/v1"
+    assert r.api_key == "explicit-key"
+    assert r.api_model == "explicit-model"

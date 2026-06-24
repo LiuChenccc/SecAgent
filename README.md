@@ -45,7 +45,7 @@ EMBEDDING_API_BASE=https://oneapi-comate.baidu-int.com/v1
 EMBEDDING_API_KEY=your-api-key
 EMBEDDING_MODEL=text-embedding-v3
 
-# 执行引擎 LLM（可选，默认同上）
+# 执行引擎 LLM（独立于意图识别，可使用同一个 OneAPI Key）
 DASHSCOPE_API_KEY=your-api-key
 DASHSCOPE_API_BASE=https://dashscope.aliyuncs.com/compatible-mode/v1
 DASHSCOPE_MODEL=qwen3.6-plus-2026-04-02
@@ -279,14 +279,40 @@ rag.add("帮我查一下这个IP的威胁情报", result, source="feedback")
 
 ### 命令行参数
 
+默认情况下，意图识别读取 `INTENT_*`，执行引擎读取 `DASHSCOPE_*`，两套模型配置互相独立：
+
 ```bash
-# Web 服务
-python3 agent/server.py --port 8800 --backend api --model deepseek-v4-pro
+# Web 服务：使用环境变量中的两套模型配置
+python3 agent/server.py --port 8800 --backend api
 
-# CLI 交互
-python3 -m agent.cli --backend api --api-base http://localhost:8000/v1
+# CLI 交互：使用环境变量中的两套模型配置
+python3 -m agent.cli --backend api
+```
 
-# 本地模型
+也可以通过参数显式指定两套模型：
+
+```bash
+python3 agent/server.py --port 8800 \
+  --intent-api-base https://oneapi-comate.baidu-int.com/v1 \
+  --intent-api-key your-intent-key \
+  --intent-model gpt-5.5 \
+  --executor-api-base https://oneapi-comate.baidu-int.com/v1 \
+  --executor-api-key your-executor-key \
+  --executor-model gpt-5.5
+```
+
+旧参数仍可用作兼容快捷方式；它们会同时设置意图识别和执行引擎：
+
+```bash
+python3 -m agent.cli \
+  --api-base https://oneapi-comate.baidu-int.com/v1 \
+  --api-key your-api-key \
+  --model gpt-5.5
+```
+
+本地意图识别模型仍使用：
+
+```bash
 python3 -m agent.cli --backend local --adapter-dir /path/to/lora/adapter
 ```
 
